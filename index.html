@@ -12,8 +12,6 @@
 :root{--green:#2d7a3a;--green-light:#e8f5ea;--yellow:#f5c518;--yellow-light:#fffbe6;--text:#1a1a1a;--muted:#666;--border:#e5e7eb;--bg:#fff;--bg2:#f9fafb;--radius:10px}
 body{font-family:'Inter',sans-serif;color:var(--text);background:var(--bg2)}
 .tel{font-family:'Noto Sans Telugu',sans-serif}
-
-/* NAV */
 nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:100;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo-icon{width:40px;height:40px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
@@ -27,8 +25,6 @@ nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;displ
 .lang-toggle{display:flex;border:1px solid var(--border);border-radius:8px;overflow:hidden}
 .lang-btn{padding:6px 12px;font-size:12px;border:none;background:none;cursor:pointer;color:var(--muted);font-weight:500}
 .lang-btn.active{background:var(--green);color:#fff}
-
-/* HERO */
 .hero{background:linear-gradient(135deg,#fffbe6 0%,#e8f5ea 100%);padding:3rem 1.5rem 2.5rem;text-align:center;border-bottom:1px solid var(--border)}
 .hero-badge{display:inline-block;background:#fff8cc;color:#7a5c00;font-size:12px;padding:5px 16px;border-radius:20px;border:1px solid #e0c800;margin-bottom:1.2rem;font-weight:500}
 .hero h1{font-size:32px;font-weight:600;color:var(--text);margin-bottom:0.5rem}
@@ -45,32 +41,21 @@ nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;displ
 .btn-green:hover{background:#245f2d}
 .btn-outline{background:#fff;color:var(--text);border:1px solid var(--border)}
 .btn-outline:hover{background:var(--bg2)}
-
-/* SECTIONS */
 .section{padding:2.5rem 1.5rem;background:#fff;margin-top:12px}
 .section-title{font-size:22px;font-weight:600;color:var(--text);margin-bottom:0.3rem}
 .section-sub{font-size:14px;color:var(--muted);margin-bottom:1.5rem}
-.divider{height:1px;background:var(--border);margin:0}
-
-/* STATS */
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px}
 .stat-card{background:var(--bg2);border-radius:12px;padding:1.2rem;text-align:center;border:1px solid var(--border)}
 .stat-icon{font-size:30px;margin-bottom:8px}
 .stat-val{font-size:24px;font-weight:700;color:var(--green)}
 .stat-lbl{font-size:12px;color:var(--muted);margin-top:3px}
-
-/* PHOTOS */
 .photos-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .photo-box{background:var(--bg2);border:1.5px dashed var(--border);border-radius:10px;aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:12px;cursor:pointer;transition:border-color 0.15s}
 .photo-box:hover{border-color:var(--green);color:var(--green)}
 .photo-box .icon{font-size:28px}
-
-/* PRICE CHART */
 .chart-tabs{display:flex;gap:8px;margin-bottom:1rem}
 .chart-tab{padding:6px 16px;border:1px solid var(--border);border-radius:20px;font-size:13px;cursor:pointer;background:#fff;color:var(--muted);font-weight:500}
 .chart-tab.active{background:var(--green);color:#fff;border-color:var(--green)}
-
-/* CONTACT */
 .contact-card{background:var(--bg2);border-radius:12px;padding:1.5rem;border:1px solid var(--border)}
 .contact-row{display:flex;align-items:center;gap:14px;padding:12px 0;border-bottom:1px solid var(--border)}
 .contact-row:last-child{border-bottom:none}
@@ -79,18 +64,12 @@ nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;displ
 .contact-value{font-size:15px;color:var(--text);font-weight:500;margin-top:2px}
 .contact-link{font-size:14px;color:var(--green);text-decoration:none;font-weight:500}
 .contact-link:hover{text-decoration:underline}
-
-/* NOTIFICATION BAR */
 .notif-bar{background:#e8f5ea;border-bottom:1px solid #b8ddbf;padding:9px 1.5rem;font-size:13px;color:#1a5c27;display:flex;align-items:center;gap:8px;font-weight:500}
-
-/* FOOTER */
 footer{background:#1a1a1a;color:#ccc;padding:2rem 1.5rem;text-align:center;margin-top:12px}
 footer .logo-footer{font-size:22px;font-weight:700;color:#fff;margin-bottom:6px}
 footer .logo-footer span{color:var(--yellow)}
 footer p{font-size:13px;margin-top:4px}
 footer a{color:var(--yellow);text-decoration:none}
-
-/* RESPONSIVE */
 @media(max-width:600px){
   .hero h1{font-size:24px}
   .price-value{font-size:42px}
@@ -122,7 +101,6 @@ footer a{color:var(--yellow);text-decoration:none}
   🔔 <span id="notif-text">Loading today's price...</span>
 </div>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-badge" id="badge-text">Trusted since 2004 — 20+ years of excellence</div>
   <h1 id="hero-title">Welcome to <span>SDB Lemons</span></h1>
@@ -139,7 +117,6 @@ footer a{color:var(--yellow);text-decoration:none}
   </div>
 </div>
 
-<!-- ABOUT -->
 <div class="section">
   <div class="section-title" id="about-title">About Our Shop</div>
   <div class="section-sub" id="about-sub">Serving lemon farmers with trust and transparency since 2004</div>
@@ -154,7 +131,6 @@ footer a{color:var(--yellow);text-decoration:none}
   </div>
 </div>
 
-<!-- PHOTOS -->
 <div class="section" style="margin-top:0;border-top:1px solid var(--border)">
   <div class="section-title" id="photos-title">Shop & Owner Photos</div>
   <div class="section-sub">Add your photos to make this section come alive</div>
@@ -168,7 +144,6 @@ footer a{color:var(--yellow);text-decoration:none}
   </div>
 </div>
 
-<!-- PRICE HISTORY -->
 <div class="section" id="price-history" style="margin-top:0;border-top:1px solid var(--border)">
   <div class="section-title" id="price-hist-title">Lemon Price History</div>
   <div class="section-sub" id="price-hist-sub">Track how prices change over time</div>
@@ -181,7 +156,6 @@ footer a{color:var(--yellow);text-decoration:none}
   </div>
 </div>
 
-<!-- CONTACT -->
 <div class="section" style="margin-top:0;border-top:1px solid var(--border)">
   <div class="section-title" id="contact-title">Contact Us</div>
   <div class="section-sub" id="contact-sub">We are here to help you</div>
@@ -284,19 +258,27 @@ function setLang(l){
   document.getElementById('btn-price-hist').textContent = t.btnPriceHist;
 }
 
+// FIXED: Now fetches the most recent price instead of today's exact date
 async function loadTodayPrice(){
   try {
-    const today = new Date().toISOString().split('T')[0];
-    const {data} = await sb.from('lemon_prices').select('*').eq('date',today).single();
+    const {data, error} = await sb
+      .from('lemon_prices')
+      .select('*')
+      .order('date', {ascending: false})
+      .limit(1)
+      .single();
     if(data){
       document.getElementById('today-price').textContent = '₹' + data.price_per_kg;
-      document.getElementById('price-date').textContent = 'Updated: ' + new Date(data.created_at).toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
-      document.getElementById('notif-text').textContent = 'Today\'s lemon price: ₹' + data.price_per_kg + '/kg — ' + new Date().toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+      document.getElementById('price-date').textContent = 'Updated: ' + new Date(data.date).toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+      document.getElementById('notif-text').textContent = 'Today\'s lemon price: ₹' + data.price_per_kg + '/kg — ' + new Date(data.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
     } else {
       document.getElementById('today-price').textContent = 'Not set';
-      document.getElementById('notif-text').textContent = 'Price not updated yet today. Contact admin.';
+      document.getElementById('notif-text').textContent = 'Price not updated yet. Contact admin.';
     }
-  } catch(e){ document.getElementById('today-price').textContent = '₹28'; }
+  } catch(e){
+    document.getElementById('today-price').textContent = 'Not set';
+    document.getElementById('notif-text').textContent = 'Price not updated yet. Contact admin.';
+  }
 }
 
 let chart;
