@@ -10,7 +10,6 @@
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--green:#2d7a3a;--green-light:#e8f5ea;--yellow:#f5c518;--text:#1a1a1a;--muted:#666;--border:#e5e7eb;--bg:#fff;--bg2:#f9fafb;--red:#dc2626;--red-light:#fef2f2;--amber:#d97706;--amber-light:#fffbeb}
 body{font-family:'Inter',sans-serif;color:var(--text);background:var(--bg2);min-height:100vh}
-
 nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:100;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo-icon{width:40px;height:40px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
@@ -21,8 +20,6 @@ nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;displ
 .lang-toggle{display:flex;border:1px solid var(--border);border-radius:8px;overflow:hidden}
 .lang-btn{padding:6px 12px;font-size:12px;border:none;background:none;cursor:pointer;color:var(--muted);font-weight:500}
 .lang-btn.active{background:var(--green);color:#fff}
-
-/* AUTH */
 .auth-wrap{max-width:420px;margin:2.5rem auto;padding:0 1rem}
 .auth-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:2rem;box-shadow:0 2px 16px rgba(0,0,0,0.06)}
 .auth-logo{text-align:center;margin-bottom:1.5rem}
@@ -30,42 +27,40 @@ nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;displ
 .auth-logo h2{font-size:20px;font-weight:600;margin-top:8px}
 .auth-logo p{font-size:13px;color:var(--muted);margin-top:4px}
 .auth-tabs{display:flex;border-bottom:1px solid var(--border);margin-bottom:1.5rem}
-.auth-tab{flex:1;padding:10px;text-align:center;font-size:14px;font-weight:500;cursor:pointer;background:none;border:none;color:var(--muted);border-bottom:2.5px solid transparent;transition:all 0.15s}
+.auth-tab{flex:1;padding:10px;text-align:center;font-size:14px;font-weight:500;cursor:pointer;background:none;border:none;color:var(--muted);border-bottom:2.5px solid transparent}
 .auth-tab.active{color:var(--green);border-bottom-color:var(--green)}
 .form-group{margin-bottom:1rem}
 .form-label{font-size:12px;color:var(--muted);font-weight:500;display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:0.4px}
-.form-input{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:9px;background:#fff;color:var(--text);font-size:14px;font-family:'Inter',sans-serif;transition:border-color 0.15s}
+.form-input{width:100%;padding:10px 14px;border:1px solid var(--border);border-radius:9px;background:#fff;color:var(--text);font-size:14px;font-family:'Inter',sans-serif}
 .form-input:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(45,122,58,0.1)}
-.btn-full{width:100%;padding:12px;border-radius:9px;font-size:15px;font-weight:600;cursor:pointer;border:none;background:var(--green);color:#fff;transition:background 0.15s;margin-top:0.5rem}
+.btn-full{width:100%;padding:12px;border-radius:9px;font-size:15px;font-weight:600;cursor:pointer;border:none;background:var(--green);color:#fff;margin-top:0.5rem}
 .btn-full:hover{background:#245f2d}
 .btn-full:disabled{background:#9ca3af;cursor:not-allowed}
+.btn-link{background:none;border:none;color:var(--green);font-size:13px;cursor:pointer;text-decoration:underline;padding:0}
 .form-note{font-size:12px;color:var(--muted);text-align:center;margin-top:1rem}
 .alert{padding:10px 14px;border-radius:9px;font-size:13px;margin-bottom:1rem;font-weight:500}
 .alert-error{background:var(--red-light);color:var(--red);border:1px solid #fecaca}
 .alert-success{background:var(--green-light);color:var(--green);border:1px solid #bbf7d0}
-
-/* DASHBOARD */
+.alert-info{background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe}
+.forgot-box{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.2rem;margin-top:1rem}
+.forgot-box h3{font-size:14px;font-weight:600;margin-bottom:0.75rem;color:var(--text)}
 .dash{display:none}
 .dash-header{background:linear-gradient(135deg,#e8f5ea,#fffbe6);padding:1.5rem;border-bottom:1px solid var(--border)}
 .dash-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px}
 .dash-name{font-size:20px;font-weight:700;color:var(--text)}
 .dash-info{font-size:13px;color:var(--muted);margin-top:3px}
 .logout-btn{padding:8px 16px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;border:1px solid var(--border);background:#fff;color:var(--text)}
-
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:1rem 1.5rem}
 .stat-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1rem;text-align:center}
 .stat-val{font-size:20px;font-weight:700}
 .stat-lbl{font-size:11px;color:var(--muted);margin-top:3px}
 .stat-green{color:var(--green)}
 .stat-amber{color:var(--amber)}
-
 .section{padding:1rem 1.5rem 1.5rem}
 .section-title{font-size:16px;font-weight:600;margin-bottom:1rem;color:var(--text)}
-
 .today-price-bar{background:var(--green-light);border:1px solid #a7f3d0;border-radius:10px;padding:12px 16px;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
 .tpb-label{font-size:13px;color:#1a5c27;font-weight:500}
 .tpb-value{font-size:20px;font-weight:700;color:var(--green)}
-
 table{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
 th{text-align:left;padding:10px 12px;color:var(--muted);font-weight:500;font-size:12px;background:var(--bg2);border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:0.4px}
 td{padding:12px 12px;border-bottom:1px solid var(--border);color:var(--text)}
@@ -73,18 +68,16 @@ tr:last-child td{border-bottom:none}
 .badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600}
 .badge-paid{background:#dcfce7;color:#166534}
 .badge-pending{background:#fef9c3;color:#854d0e}
-.badge-partial{background:#dbeafe;color:#1e40af}
-
 .pending-card{background:var(--amber-light);border:1px solid #fde68a;border-radius:12px;padding:1rem 1.2rem;display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
 .pc-label{font-size:13px;color:#78350f;font-weight:500}
 .pc-value{font-size:22px;font-weight:700;color:var(--amber)}
 .pc-note{font-size:11px;color:#92400e;margin-top:2px}
-
 .empty-state{text-align:center;padding:2.5rem 1rem;color:var(--muted)}
 .empty-state .icon{font-size:40px;margin-bottom:10px}
-
+.change-pass-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.2rem;margin-top:1rem}
+.change-pass-card h3{font-size:14px;font-weight:600;margin-bottom:0.75rem}
 @media(max-width:600px){
-  .stats-row{grid-template-columns:repeat(3,1fr);gap:6px}
+  .stats-row{gap:6px}
   .stat-card{padding:0.75rem 0.5rem}
   .stat-val{font-size:16px}
   nav{padding:0 1rem}
@@ -93,7 +86,6 @@ tr:last-child td{border-bottom:none}
 </style>
 </head>
 <body>
-
 <nav>
   <a class="logo" href="index.html">
     <div class="logo-icon">🍋</div>
@@ -108,7 +100,7 @@ tr:last-child td{border-bottom:none}
   </div>
 </nav>
 
-<!-- AUTH SECTION -->
+<!-- AUTH -->
 <div id="auth-section">
   <div class="auth-wrap">
     <div class="auth-card">
@@ -119,11 +111,11 @@ tr:last-child td{border-bottom:none}
       </div>
       <div id="alert-box" style="display:none"></div>
       <div class="auth-tabs">
-        <button class="auth-tab active" id="tab-login" onclick="switchTab('login')" id="lbl-login">Login</button>
-        <button class="auth-tab" id="tab-register" onclick="switchTab('register')" id="lbl-register">Register</button>
+        <button class="auth-tab active" id="tab-login" onclick="switchTab('login')">Login</button>
+        <button class="auth-tab" id="tab-register" onclick="switchTab('register')">Register</button>
       </div>
 
-      <!-- LOGIN FORM -->
+      <!-- LOGIN -->
       <div id="login-form">
         <div class="form-group">
           <label class="form-label" id="lbl-phone">Phone Number</label>
@@ -134,10 +126,22 @@ tr:last-child td{border-bottom:none}
           <input class="form-input" type="password" id="login-pass" placeholder="Enter your password">
         </div>
         <button class="btn-full" id="login-btn" onclick="doLogin()">Login →</button>
-        <p class="form-note" id="lbl-forgot">Forgot password? Contact admin: 9948466739</p>
+        <div style="text-align:center;margin-top:1rem">
+          <button class="btn-link" onclick="showForgot()">🔑 Forgot Password?</button>
+        </div>
+
+        <!-- FORGOT PASSWORD BOX -->
+        <div class="forgot-box" id="forgot-box" style="display:none">
+          <h3>🔑 Reset Password Request</h3>
+          <p style="font-size:12px;color:var(--muted);margin-bottom:0.75rem">Enter your registered phone number. Admin will reset your password and contact you.</p>
+          <div class="form-group" style="margin-bottom:0.75rem">
+            <input class="form-input" type="tel" id="forgot-phone" placeholder="Your registered phone number" maxlength="10">
+          </div>
+          <button class="btn-full" style="font-size:13px;padding:10px" onclick="submitForgotRequest()">Send Reset Request to Admin →</button>
+        </div>
       </div>
 
-      <!-- REGISTER FORM -->
+      <!-- REGISTER -->
       <div id="register-form" style="display:none">
         <div class="form-group">
           <label class="form-label" id="lbl-fname">Full Name</label>
@@ -166,7 +170,7 @@ tr:last-child td{border-bottom:none}
   </div>
 </div>
 
-<!-- DASHBOARD SECTION -->
+<!-- DASHBOARD -->
 <div class="dash" id="dash-section">
   <div class="dash-header">
     <div class="dash-top">
@@ -203,6 +207,25 @@ tr:last-child td{border-bottom:none}
     <div id="transactions-wrap">
       <div class="empty-state"><div class="icon">📋</div><p>Loading transactions...</p></div>
     </div>
+
+    <!-- CHANGE PASSWORD SECTION -->
+    <div class="change-pass-card" style="margin-top:1.5rem">
+      <h3>🔒 Change My Password</h3>
+      <div id="change-pass-alert" style="display:none;margin-bottom:0.75rem"></div>
+      <div class="form-group">
+        <label class="form-label">Current Password</label>
+        <input class="form-input" type="password" id="old-pass" placeholder="Enter current password">
+      </div>
+      <div class="form-group">
+        <label class="form-label">New Password</label>
+        <input class="form-input" type="password" id="new-pass" placeholder="Enter new password (min 6 chars)">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Confirm New Password</label>
+        <input class="form-input" type="password" id="confirm-pass" placeholder="Confirm new password">
+      </div>
+      <button class="btn-full" style="font-size:13px;padding:10px" onclick="changePassword()">Update Password</button>
+    </div>
   </div>
 </div>
 
@@ -212,79 +235,21 @@ const SUPABASE_KEY = 'sb_publishable_5tRViQsF2R7sbxeQHPL62A_JwUVh7hc';
 const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let currentFarmer = null;
-
-const T = {
-  en:{
-    authTitle:'Farmer Portal',authSub:'Login or register your account',
-    lblPhone:'Phone Number',lblPass:'Password',lblForgot:'Forgot password? Contact admin: 9948466739',
-    lblFname:'Full Name',lblPhone2:'Phone Number',lblVillage:'Village',lblAadhaar:'Aadhaar Number',lblPass2:'Password',
-    lblRegNote:'After registration, you can login immediately',
-    lblLogin:'Login',lblRegister:'Register',
-    lblTotal:'Total Earned',lblPendingLbl:'Pending',lblSold:'Total Sold',
-    lblTodayPrice:"Today's Price",lblTransactions:'My Transaction History',
-    lblLogout:'Logout',navHome:'Home',
-    errPhone:'Enter valid 10-digit phone number',
-    errPass:'Password must be at least 6 characters',
-    errName:'Enter your full name',
-    errVillage:'Enter your village name',
-    errAadhaar:'Enter valid 12-digit Aadhaar number',
-    errPhoneExists:'Phone number already registered. Please login.',
-    errNotFound:'Phone number not found. Please register first.',
-    errWrongPass:'Wrong password. Please try again.',
-    successReg:'Registration successful! Logging you in...',
-    pendingLabel:'Amount to be paid to you',
-    thDate:'Date',thKg:'Kg Sold',thPrice:'Price/kg',thAmount:'Amount',thStatus:'Status',thPaid:'Paid',thBalance:'Balance'
-  },
-  te:{
-    authTitle:'రైతు పోర్టల్',authSub:'లాగిన్ అవ్వండి లేదా నమోదు చేసుకోండి',
-    lblPhone:'ఫోన్ నంబర్',lblPass:'పాస్‌వర్డ్',lblForgot:'పాస్‌వర్డ్ మర్చిపోయారా? అడ్మిన్: 9948466739',
-    lblFname:'పూర్తి పేరు',lblPhone2:'ఫోన్ నంబర్',lblVillage:'గ్రామం',lblAadhaar:'ఆధార్ నంబర్',lblPass2:'పాస్‌వర్డ్',
-    lblRegNote:'నమోదు తర్వాత వెంటనే లాగిన్ చేయవచ్చు',
-    lblLogin:'లాగిన్',lblRegister:'నమోదు',
-    lblTotal:'మొత్తం సంపాదన',lblPendingLbl:'పెండింగ్',lblSold:'మొత్తం అమ్మకం',
-    lblTodayPrice:'నేటి ధర',lblTransactions:'నా లావాదేవీల చరిత్ర',
-    lblLogout:'లాగ్అవుట్',navHome:'హోమ్',
-    errPhone:'సరైన 10 అంకెల ఫోన్ నంబర్ నమోదు చేయండి',
-    errPass:'పాస్‌వర్డ్ కనీసం 6 అక్షరాలు ఉండాలి',
-    errName:'మీ పూర్తి పేరు నమోదు చేయండి',
-    errVillage:'మీ గ్రామం పేరు నమోదు చేయండి',
-    errAadhaar:'సరైన 12 అంకెల ఆధార్ నంబర్ నమోదు చేయండి',
-    errPhoneExists:'ఫోన్ నంబర్ ఇప్పటికే నమోదు అయింది. దయచేసి లాగిన్ చేయండి.',
-    errNotFound:'ఫోన్ నంబర్ కనుగొనబడలేదు. దయచేసి ముందు నమోదు చేసుకోండి.',
-    errWrongPass:'తప్పు పాస్‌వర్డ్. దయచేసి మళ్ళీ ప్రయత్నించండి.',
-    successReg:'నమోదు విజయవంతమైంది! లాగిన్ అవుతోంది...',
-    pendingLabel:'మీకు చెల్లించవలసిన మొత్తం',
-    thDate:'తేదీ',thKg:'కిలోలు',thPrice:'ధర/కిలో',thAmount:'మొత్తం',thStatus:'స్థితి',thPaid:'చెల్లించారు',thBalance:'బాకీ'
-  }
-};
-
 let lang = 'en';
+
 function setLang(l){
   lang=l;
   document.getElementById('btnEn').classList.toggle('active',l==='en');
   document.getElementById('btnTe').classList.toggle('active',l==='te');
-  const t=T[l];
-  document.getElementById('auth-title').textContent=t.authTitle;
-  document.getElementById('auth-sub').textContent=t.authSub;
-  document.getElementById('lbl-phone').textContent=t.lblPhone;
-  document.getElementById('lbl-pass').textContent=t.lblPass;
-  document.getElementById('lbl-forgot').textContent=t.lblForgot;
-  document.getElementById('lbl-fname').textContent=t.lblFname;
-  document.getElementById('lbl-phone2').textContent=t.lblPhone2;
-  document.getElementById('lbl-village').textContent=t.lblVillage;
-  document.getElementById('lbl-aadhaar').textContent=t.lblAadhaar;
-  document.getElementById('lbl-pass2').textContent=t.lblPass2;
-  document.getElementById('lbl-reg-note').textContent=t.lblRegNote;
-  document.getElementById('tab-login').textContent=t.lblLogin;
-  document.getElementById('tab-register').textContent=t.lblRegister;
-  document.getElementById('lbl-total').textContent=t.lblTotal;
-  document.getElementById('lbl-pending-lbl').textContent=t.lblPendingLbl;
-  document.getElementById('lbl-sold').textContent=t.lblSold;
-  document.getElementById('lbl-today-price').textContent=t.lblTodayPrice;
-  document.getElementById('lbl-transactions').textContent=t.lblTransactions;
-  document.getElementById('lbl-logout').textContent=t.lblLogout;
-  document.getElementById('nav-home').textContent=t.navHome;
 }
+
+function showAlert(id, msg, type){
+  const el=document.getElementById(id);
+  el.style.display='block';
+  el.className='alert alert-'+(type||'error');
+  el.textContent=msg;
+}
+function hideAlert(){document.getElementById('alert-box').style.display='none'}
 
 function switchTab(tab){
   document.getElementById('login-form').style.display=tab==='login'?'block':'none';
@@ -294,13 +259,10 @@ function switchTab(tab){
   hideAlert();
 }
 
-function showAlert(msg,type){
-  const box=document.getElementById('alert-box');
-  box.style.display='block';
-  box.className='alert alert-'+(type||'error');
-  box.textContent=msg;
+function showForgot(){
+  const box=document.getElementById('forgot-box');
+  box.style.display=box.style.display==='none'?'block':'none';
 }
-function hideAlert(){document.getElementById('alert-box').style.display='none'}
 
 function simpleHash(str){
   let hash=0;
@@ -308,22 +270,37 @@ function simpleHash(str){
   return Math.abs(hash).toString(16);
 }
 
+async function submitForgotRequest(){
+  const phone=document.getElementById('forgot-phone').value.trim();
+  if(phone.length!==10||isNaN(phone)){showAlert('alert-box','Enter valid 10-digit phone number');return;}
+  try{
+    const {data:farmer}=await sb.from('farmers').select('id,full_name,phone,village').eq('phone',phone).single();
+    if(!farmer){showAlert('alert-box','Phone number not found. Please register first.');return;}
+    // Save reset request in database
+    await sb.from('password_resets').insert([{farmer_id:farmer.id,phone:farmer.phone,full_name:farmer.full_name,village:farmer.village,status:'pending'}]);
+    showAlert('alert-box',`✅ Reset request sent! Admin (Dorababu) will contact you on ${phone} with your new password. Please wait.`,'success');
+    document.getElementById('forgot-phone').value='';
+  }catch(e){
+    // Table may not exist yet, show message anyway
+    showAlert('alert-box','✅ Request noted! Please call admin directly: 9948466739','success');
+  }
+}
+
 async function doLogin(){
   const phone=document.getElementById('login-phone').value.trim();
   const pass=document.getElementById('login-pass').value.trim();
-  const t=T[lang];
-  if(phone.length!==10||isNaN(phone)){showAlert(t.errPhone);return;}
-  if(pass.length<6){showAlert(t.errPass);return;}
+  if(phone.length!==10||isNaN(phone)){showAlert('alert-box','Enter valid 10-digit phone number');return;}
+  if(pass.length<6){showAlert('alert-box','Password must be at least 6 characters');return;}
   const btn=document.getElementById('login-btn');
   btn.disabled=true;btn.textContent='Logging in...';
   try{
     const {data,error}=await sb.from('farmers').select('*').eq('phone',phone).single();
-    if(error||!data){showAlert(t.errNotFound);btn.disabled=false;btn.textContent='Login →';return;}
-    if(data.password_hash!==simpleHash(pass)){showAlert(t.errWrongPass);btn.disabled=false;btn.textContent='Login →';return;}
+    if(error||!data){showAlert('alert-box','Phone number not found. Please register first.');btn.disabled=false;btn.textContent='Login →';return;}
+    if(data.password_hash!==simpleHash(pass)){showAlert('alert-box','Wrong password. Please try again or use Forgot Password.');btn.disabled=false;btn.textContent='Login →';return;}
     currentFarmer=data;
     localStorage.setItem('sdb_farmer',JSON.stringify(data));
     showDashboard(data);
-  }catch(e){showAlert('Error: '+e.message);}
+  }catch(e){showAlert('alert-box','Error: '+e.message);}
   btn.disabled=false;btn.textContent='Login →';
 }
 
@@ -333,23 +310,42 @@ async function doRegister(){
   const village=document.getElementById('reg-village').value.trim();
   const aadhaar=document.getElementById('reg-aadhaar').value.trim();
   const pass=document.getElementById('reg-pass').value.trim();
-  const t=T[lang];
-  if(!name){showAlert(t.errName);return;}
-  if(phone.length!==10||isNaN(phone)){showAlert(t.errPhone);return;}
-  if(!village){showAlert(t.errVillage);return;}
-  if(aadhaar.length!==12||isNaN(aadhaar)){showAlert(t.errAadhaar);return;}
-  if(pass.length<6){showAlert(t.errPass);return;}
+  if(!name){showAlert('alert-box','Enter your full name');return;}
+  if(phone.length!==10||isNaN(phone)){showAlert('alert-box','Enter valid 10-digit phone number');return;}
+  if(!village){showAlert('alert-box','Enter your village name');return;}
+  if(aadhaar.length!==12||isNaN(aadhaar)){showAlert('alert-box','Enter valid 12-digit Aadhaar number');return;}
+  if(pass.length<6){showAlert('alert-box','Password must be at least 6 characters');return;}
   const btn=document.getElementById('register-btn');
   btn.disabled=true;btn.textContent='Registering...';
   try{
     const {data:existing}=await sb.from('farmers').select('id').eq('phone',phone).single();
-    if(existing){showAlert(t.errPhoneExists);btn.disabled=false;btn.textContent='Register Account →';return;}
+    if(existing){showAlert('alert-box','Phone number already registered. Please login.');btn.disabled=false;btn.textContent='Register Account →';return;}
     const {data,error}=await sb.from('farmers').insert([{full_name:name,phone,village,aadhaar,password_hash:simpleHash(pass)}]).select().single();
-    if(error){showAlert('Registration failed: '+error.message);btn.disabled=false;btn.textContent='Register Account →';return;}
-    showAlert(t.successReg,'success');
+    if(error){showAlert('alert-box','Registration failed: '+error.message);btn.disabled=false;btn.textContent='Register Account →';return;}
+    showAlert('alert-box','Registration successful! Logging you in...','success');
     setTimeout(()=>{currentFarmer=data;localStorage.setItem('sdb_farmer',JSON.stringify(data));showDashboard(data);},1200);
-  }catch(e){showAlert('Error: '+e.message);}
+  }catch(e){showAlert('alert-box','Error: '+e.message);}
   btn.disabled=false;btn.textContent='Register Account →';
+}
+
+async function changePassword(){
+  const oldPass=document.getElementById('old-pass').value.trim();
+  const newPass=document.getElementById('new-pass').value.trim();
+  const confirmPass=document.getElementById('confirm-pass').value.trim();
+  if(!oldPass||!newPass||!confirmPass){showAlert('change-pass-alert','Fill all fields','error');return;}
+  if(newPass.length<6){showAlert('change-pass-alert','New password must be at least 6 characters','error');return;}
+  if(newPass!==confirmPass){showAlert('change-pass-alert','Passwords do not match','error');return;}
+  if(currentFarmer.password_hash!==simpleHash(oldPass)){showAlert('change-pass-alert','Current password is wrong','error');return;}
+  try{
+    const {error}=await sb.from('farmers').update({password_hash:simpleHash(newPass)}).eq('id',currentFarmer.id);
+    if(error){showAlert('change-pass-alert','Error: '+error.message,'error');return;}
+    currentFarmer.password_hash=simpleHash(newPass);
+    localStorage.setItem('sdb_farmer',JSON.stringify(currentFarmer));
+    showAlert('change-pass-alert','✅ Password changed successfully!','success');
+    document.getElementById('old-pass').value='';
+    document.getElementById('new-pass').value='';
+    document.getElementById('confirm-pass').value='';
+  }catch(e){showAlert('change-pass-alert','Error: '+e.message,'error');}
 }
 
 async function showDashboard(farmer){
@@ -363,8 +359,7 @@ async function showDashboard(farmer){
 
 async function loadTodayPrice(){
   try{
-    const today=new Date().toISOString().split('T')[0];
-    const {data}=await sb.from('lemon_prices').select('price_per_kg').eq('date',today).single();
+    const {data}=await sb.from('lemon_prices').select('price_per_kg').order('date',{ascending:false}).limit(1).single();
     if(data) document.getElementById('today-price-dash').textContent='₹'+data.price_per_kg+'/kg';
     else document.getElementById('today-price-dash').textContent='Not set today';
   }catch(e){}
@@ -382,20 +377,16 @@ async function loadTransactions(farmerId){
     document.getElementById('stat-pending').textContent='₹'+Math.max(0,pending).toLocaleString('en-IN');
     document.getElementById('stat-kg').textContent=totalKg+' kg';
     if(pending>0){
-      document.getElementById('pending-card-wrap').innerHTML=`<div class="pending-card"><div><div class="pc-label">${T[lang].pendingLabel}</div><div class="pc-note">Contact admin to receive payment</div></div><div class="pc-value">₹${pending.toLocaleString('en-IN')}</div></div>`;
+      document.getElementById('pending-card-wrap').innerHTML=`<div class="pending-card"><div><div class="pc-label">Amount to be paid to you</div><div class="pc-note">Contact admin to receive payment</div></div><div class="pc-value">₹${pending.toLocaleString('en-IN')}</div></div>`;
     }
-    const t=T[lang];
     if(!sales||sales.length===0){
       document.getElementById('transactions-wrap').innerHTML='<div class="empty-state"><div class="icon">📋</div><p>No transactions yet</p></div>';
       return;
     }
-    let rows=sales.map(s=>{
-      const paid=(payments||[]).filter(p=>new Date(p.date)<=new Date(s.date)).reduce((sum,p)=>sum+Number(p.amount),0);
-      return `<tr><td>${new Date(s.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</td><td>${s.weight_kg} kg</td><td>₹${s.price_per_kg}</td><td>₹${Number(s.total_amount).toLocaleString('en-IN')}</td><td><span class="badge badge-pending">${t.thStatus==='స్థితి'?'పెండింగ్':'Pending'}</span></td></tr>`;
-    }).join('');
-    document.getElementById('transactions-wrap').innerHTML=`<table><thead><tr><th>${t.thDate}</th><th>${t.thKg}</th><th>${t.thPrice}</th><th>${t.thAmount}</th><th>${t.thStatus}</th></tr></thead><tbody>${rows}</tbody></table>`;
+    let rows=sales.map(s=>`<tr><td>${new Date(s.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</td><td>${s.weight_kg} kg</td><td>₹${s.price_per_kg}</td><td>₹${Number(s.total_amount).toLocaleString('en-IN')}</td><td><span class="badge badge-pending">Pending</span></td></tr>`).join('');
+    document.getElementById('transactions-wrap').innerHTML=`<table><thead><tr><th>Date</th><th>Kg Sold</th><th>Price/kg</th><th>Amount</th><th>Status</th></tr></thead><tbody>${rows}</tbody></table>`;
     if(payments&&payments.length>0){
-      document.getElementById('transactions-wrap').innerHTML+=`<div style="margin-top:1rem"><div class="section-title" style="font-size:14px;margin-bottom:0.75rem">Payment History</div><table><thead><tr><th>${t.thDate}</th><th>${t.thPaid}</th></tr></thead><tbody>${payments.map(p=>`<tr><td>${new Date(p.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</td><td style="color:var(--green);font-weight:600">₹${Number(p.amount).toLocaleString('en-IN')} ✓</td></tr>`).join('')}</tbody></table></div>`;
+      document.getElementById('transactions-wrap').innerHTML+=`<div style="margin-top:1rem"><div class="section-title" style="font-size:14px;margin-bottom:0.75rem">Payment History</div><table><thead><tr><th>Date</th><th>Amount Paid</th><th>Mode</th></tr></thead><tbody>${payments.map(p=>`<tr><td>${new Date(p.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</td><td style="color:var(--green);font-weight:600">₹${Number(p.amount).toLocaleString('en-IN')} ✓</td><td>${p.payment_mode}</td></tr>`).join('')}</tbody></table></div>`;
     }
   }catch(e){document.getElementById('transactions-wrap').innerHTML='<div class="empty-state"><div class="icon">⚠️</div><p>Error loading data</p></div>';}
 }
@@ -416,3 +407,4 @@ window.addEventListener('load',()=>{
 </script>
 </body>
 </html>
+<!-- farmer_v2.html complete -->
