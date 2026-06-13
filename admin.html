@@ -20,8 +20,6 @@ nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;displ
 .lang-toggle{display:flex;border:1px solid var(--border);border-radius:8px;overflow:hidden}
 .lang-btn{padding:6px 12px;font-size:12px;border:none;background:none;cursor:pointer;color:var(--muted);font-weight:500}
 .lang-btn.active{background:var(--green);color:#fff}
-
-/* LOGIN */
 .login-wrap{max-width:400px;margin:3rem auto;padding:0 1rem}
 .login-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:2rem;box-shadow:0 2px 16px rgba(0,0,0,0.06);text-align:center}
 .login-icon{font-size:48px;margin-bottom:1rem}
@@ -38,39 +36,29 @@ nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;displ
 .btn-sm{padding:7px 14px;font-size:12px;font-weight:500;border-radius:7px;cursor:pointer;border:1px solid var(--border);background:#fff;color:var(--text)}
 .btn-sm-green{background:var(--green);color:#fff;border-color:var(--green)}
 .btn-sm-red{background:var(--red);color:#fff;border-color:var(--red)}
+.btn-sm-amber{background:var(--amber);color:#fff;border-color:var(--amber)}
 .btn-sm-blue{background:var(--blue);color:#fff;border-color:var(--blue)}
 .alert{padding:10px 14px;border-radius:9px;font-size:13px;margin-bottom:1rem;font-weight:500}
 .alert-error{background:var(--red-light);color:var(--red);border:1px solid #fecaca}
 .alert-success{background:var(--green-light);color:var(--green);border:1px solid #bbf7d0}
-
-/* DASHBOARD */
 .admin-dash{display:none}
 .dash-header{background:linear-gradient(135deg,#1a3a1e,#2d7a3a);padding:1.5rem;color:#fff}
 .dash-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
 .dash-name{font-size:20px;font-weight:700}
 .dash-sub{font-size:13px;opacity:0.8;margin-top:3px}
 .logout-btn{padding:8px 16px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;border:1px solid rgba(255,255,255,0.3);background:rgba(255,255,255,0.1);color:#fff}
-
 .stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;padding:1rem 1.5rem}
 .stat-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1rem;text-align:center}
 .stat-val{font-size:20px;font-weight:700}
 .stat-lbl{font-size:11px;color:var(--muted);margin-top:3px}
-
-/* TABS */
 .tabs{display:flex;background:#fff;border-bottom:1px solid var(--border);overflow-x:auto;padding:0 1rem}
-.tab{padding:14px 16px;font-size:13px;font-weight:500;cursor:pointer;border:none;background:none;color:var(--muted);border-bottom:2.5px solid transparent;white-space:nowrap;transition:all 0.15s}
+.tab{padding:14px 16px;font-size:13px;font-weight:500;cursor:pointer;border:none;background:none;color:var(--muted);border-bottom:2.5px solid transparent;white-space:nowrap}
 .tab.active{color:var(--green);border-bottom-color:var(--green)}
-
 .tab-content{display:none;padding:1.5rem}
 .tab-content.active{display:block}
-
-/* CARDS */
 .card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-bottom:1rem}
 .card-title{font-size:16px;font-weight:600;margin-bottom:1.2rem;color:var(--text)}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.form-row-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
-
-/* TABLE */
 .table-wrap{overflow-x:auto}
 table{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:12px;overflow:hidden;border:1px solid var(--border)}
 th{text-align:left;padding:10px 12px;color:var(--muted);font-weight:500;font-size:12px;background:var(--bg2);border-bottom:1px solid var(--border);text-transform:uppercase;letter-spacing:0.4px;white-space:nowrap}
@@ -81,16 +69,22 @@ tr:hover td{background:#fafafa}
 .badge-paid{background:#dcfce7;color:#166534}
 .badge-pending{background:#fef9c3;color:#854d0e}
 .badge-overdue{background:#fee2e2;color:#991b1b}
+.badge-reset{background:#dbeafe;color:#1e40af}
 
-/* CALC BOX */
+/* PRICE RANGE */
+.price-range-inputs{display:grid;grid-template-columns:1fr auto 1fr;gap:10px;align-items:center;margin-bottom:1rem}
+.range-sep{font-size:20px;color:var(--muted);text-align:center;font-weight:300}
+.current-range-display{background:linear-gradient(135deg,var(--yellow-light),var(--green-light));border:1px solid #e0c800;border-radius:12px;padding:1rem 1.5rem;margin-bottom:1rem;text-align:center}
+.crd-label{font-size:12px;color:var(--muted);margin-bottom:6px;font-weight:500;text-transform:uppercase}
+.crd-range{font-size:28px;font-weight:700;color:var(--green)}
+.crd-date{font-size:11px;color:var(--muted);margin-top:4px}
+
 .calc-box{background:var(--green-light);border:1px solid #a7f3d0;border-radius:10px;padding:12px 16px;margin:1rem 0;display:flex;justify-content:space-between;align-items:center}
 .calc-label{font-size:13px;color:#1a5c27;font-weight:500}
 .calc-value{font-size:22px;font-weight:700;color:var(--green)}
-
 .search-box{display:flex;gap:8px;margin-bottom:1rem}
 .search-input{flex:1;padding:9px 14px;border:1px solid var(--border);border-radius:9px;font-size:14px;font-family:'Inter',sans-serif}
 .search-input:focus{outline:none;border-color:var(--green)}
-
 .farmer-detail-card{background:var(--green-light);border:1px solid #a7f3d0;border-radius:12px;padding:1rem 1.2rem;margin-bottom:1rem}
 .fdc-name{font-size:16px;font-weight:700;color:var(--green)}
 .fdc-info{font-size:13px;color:#1a5c27;margin-top:4px}
@@ -98,15 +92,23 @@ tr:hover td{background:#fafafa}
 .fdc-stat{background:#fff;border-radius:8px;padding:8px;text-align:center}
 .fdc-stat-val{font-size:16px;font-weight:700;color:var(--green)}
 .fdc-stat-lbl{font-size:10px;color:var(--muted);margin-top:2px}
-
 .empty-state{text-align:center;padding:2.5rem 1rem;color:var(--muted)}
 .empty-state .icon{font-size:40px;margin-bottom:10px}
-
+.reset-request-card{background:#eff6ff;border:1px solid #bfdbfe;border-radius:12px;padding:1rem 1.2rem;margin-bottom:0.75rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.rrc-info .name{font-size:15px;font-weight:600;color:var(--blue)}
+.rrc-info .details{font-size:12px;color:var(--muted);margin-top:3px}
+.rrc-actions{display:flex;gap:8px;align-items:center}
+.new-pass-input{padding:8px 12px;border:1px solid var(--border);border-radius:8px;font-size:13px;width:140px;font-family:'Inter',sans-serif}
+.danger-zone{background:var(--red-light);border:1px solid #fecaca;border-radius:12px;padding:1rem 1.2rem;margin-top:1rem}
+.danger-zone h4{color:var(--red);font-size:14px;margin-bottom:8px}
+.danger-zone p{font-size:12px;color:#7a1a1a;margin-bottom:10px}
 @media(max-width:600px){
-  .form-row,.form-row-3{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
   nav{padding:0 1rem}
   .tab-content{padding:1rem}
   .stats-row{grid-template-columns:repeat(2,1fr)}
+  .price-range-inputs{grid-template-columns:1fr auto 1fr}
+  .reset-request-card{flex-direction:column;align-items:flex-start}
 }
 </style>
 </head>
@@ -143,7 +145,7 @@ tr:hover td{background:#fafafa}
         <input class="form-input" type="password" id="admin-pass" placeholder="Enter password">
       </div>
       <button class="btn btn-green" id="admin-login-btn" onclick="doAdminLogin()">Login to Admin Panel →</button>
-      <p style="font-size:12px;color:var(--muted);margin-top:1rem">Default password: <strong>sdb2024</strong> (change after first login)</p>
+      <p style="font-size:12px;color:var(--muted);margin-top:1rem">Default password: <strong>sdb2024</strong></p>
     </div>
   </div>
 </div>
@@ -164,33 +166,46 @@ tr:hover td{background:#fafafa}
     <div class="stat-card"><div class="stat-val" id="s-farmers" style="color:var(--green)">0</div><div class="stat-lbl">Total Farmers</div></div>
     <div class="stat-card"><div class="stat-val" id="s-sales" style="color:var(--blue)">₹0</div><div class="stat-lbl">Total Sales</div></div>
     <div class="stat-card"><div class="stat-val" id="s-pending" style="color:var(--amber)">₹0</div><div class="stat-lbl">Total Pending</div></div>
-    <div class="stat-card"><div class="stat-val" id="s-today" style="color:var(--green)">₹--</div><div class="stat-lbl">Today's Price</div></div>
+    <div class="stat-card"><div class="stat-val" id="s-today" style="color:var(--green)">--</div><div class="stat-lbl">Today's Range</div></div>
+    <div class="stat-card"><div class="stat-val" id="s-resets" style="color:var(--blue)">0</div><div class="stat-lbl">Reset Requests</div></div>
   </div>
 
   <div class="tabs">
-    <button class="tab active" onclick="showTab('price')">💰 Update Price</button>
-    <button class="tab" onclick="showTab('sale')">➕ Add Sale</button>
-    <button class="tab" onclick="showTab('payment')">💸 Payment</button>
-    <button class="tab" onclick="showTab('farmers')">👨‍🌾 Farmers</button>
-    <button class="tab" onclick="showTab('export')">📥 Export</button>
+    <button class="tab active" onclick="showTab('price',this)">💰 Price</button>
+    <button class="tab" onclick="showTab('sale',this)">➕ Add Sale</button>
+    <button class="tab" onclick="showTab('payment',this)">💸 Payment</button>
+    <button class="tab" onclick="showTab('farmers',this)">👨‍🌾 Farmers</button>
+    <button class="tab" onclick="showTab('resets',this)">🔑 Password Resets</button>
+    <button class="tab" onclick="showTab('export',this)">📥 Export</button>
   </div>
 
-  <!-- TAB: UPDATE PRICE -->
+  <!-- TAB: PRICE RANGE -->
   <div class="tab-content active" id="tab-price">
     <div class="card">
-      <div class="card-title">💰 Update Today's Lemon Price</div>
+      <div class="card-title">💰 Update Today's Lemon Price Range</div>
       <div id="price-alert" style="display:none"></div>
-      <div class="form-row">
-        <div class="form-group">
-          <label class="form-label">Date</label>
-          <input class="form-input" type="date" id="price-date">
+      <div class="current-range-display" id="current-range-display">
+        <div class="crd-label">Current Price Range</div>
+        <div class="crd-range" id="current-range-val">Loading...</div>
+        <div class="crd-date" id="current-range-date"></div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Date</label>
+        <input class="form-input" type="date" id="price-date">
+      </div>
+      <div class="price-range-inputs">
+        <div>
+          <label class="form-label">Minimum Price (₹/kg)</label>
+          <input class="form-input" type="number" id="price-min" placeholder="e.g. 25" min="1">
         </div>
-        <div class="form-group">
-          <label class="form-label">Price per kg (₹)</label>
-          <input class="form-input" type="number" id="price-val" placeholder="e.g. 28" min="1" max="999">
+        <div class="range-sep" style="margin-top:22px">—</div>
+        <div>
+          <label class="form-label">Maximum Price (₹/kg)</label>
+          <input class="form-input" type="number" id="price-max" placeholder="e.g. 40" min="1">
         </div>
       </div>
-      <button class="btn btn-green" style="width:auto;padding:11px 28px" onclick="updatePrice()">Save & Update Price</button>
+      <p style="font-size:12px;color:var(--muted);margin-bottom:1rem">💡 Example: Min ₹25 — Max ₹40. Good quality lemons get higher price, lower quality get lower price.</p>
+      <button class="btn btn-green" style="width:auto;padding:11px 28px" onclick="updatePrice()">Save Price Range</button>
     </div>
     <div class="card">
       <div class="card-title">📅 Recent Price History</div>
@@ -221,8 +236,17 @@ tr:hover td{background:#fafafa}
         </div>
       </div>
       <div class="form-group">
-        <label class="form-label">Price per kg (₹) — Auto filled from today</label>
-        <input class="form-input" type="number" id="sale-price" placeholder="e.g. 28" oninput="calcAmount()">
+        <label class="form-label">Actual Price for This Farmer (₹/kg)</label>
+        <input class="form-input" type="number" id="sale-price" placeholder="Enter actual price based on quality" oninput="calcAmount()">
+        <p style="font-size:11px;color:var(--muted);margin-top:4px" id="price-range-hint">Today's range: loading...</p>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Quality</label>
+        <select class="form-input" id="sale-quality">
+          <option value="Good">🟢 Good Quality</option>
+          <option value="Medium">🟡 Medium Quality</option>
+          <option value="Low">🔴 Low Quality</option>
+        </select>
       </div>
       <div class="calc-box">
         <div class="calc-label">Total Amount = Weight × Price</div>
@@ -275,6 +299,32 @@ tr:hover td{background:#fafafa}
     <div id="farmers-list"><div class="empty-state"><div class="icon">👨‍🌾</div><p>Loading farmers...</p></div></div>
   </div>
 
+  <!-- TAB: PASSWORD RESETS -->
+  <div class="tab-content" id="tab-resets">
+    <div class="card">
+      <div class="card-title">🔑 Password Reset Requests</div>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:1rem">Farmers who forgot their password will appear here. Set a new password and inform them.</p>
+      <div id="resets-list"><div class="empty-state"><div class="icon">🔑</div><p>Loading requests...</p></div></div>
+    </div>
+
+    <div class="card" style="margin-top:1rem">
+      <div class="card-title">🔒 Reset Any Farmer Password Directly</div>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:1rem">Search and reset any farmer's password directly.</p>
+      <div id="direct-reset-alert" style="display:none"></div>
+      <div class="form-group">
+        <label class="form-label">Select Farmer</label>
+        <select class="form-input" id="reset-farmer-select">
+          <option value="">-- Select Farmer --</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">New Password</label>
+        <input class="form-input" type="text" id="reset-new-pass" placeholder="Enter new password for farmer">
+      </div>
+      <button class="btn btn-green" style="width:auto;padding:11px 28px" onclick="directResetPassword()">Reset Password</button>
+    </div>
+  </div>
+
   <!-- TAB: EXPORT -->
   <div class="tab-content" id="tab-export">
     <div class="card">
@@ -299,54 +349,45 @@ tr:hover td{background:#fafafa}
         <button class="btn btn-green" style="width:auto;padding:11px 24px" onclick="exportCSV()">📊 Export as CSV (Excel)</button>
         <button class="btn" style="width:auto;padding:11px 24px;background:var(--blue);color:#fff" onclick="exportPrint()">🖨️ Print / Save as PDF</button>
       </div>
-      <p style="font-size:12px;color:var(--muted);margin-top:10px">CSV file opens in Excel. For PDF, use Print → Save as PDF in your browser.</p>
     </div>
-    <div id="export-preview"></div>
   </div>
 </div>
 
 <script>
-const SUPABASE_URL = 'https://ivlqndcsdfdprynfaqyv.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_5tRViQsF2R7sbxeQHPL62A_JwUVh7hc';
-const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+const SUPABASE_URL='https://ivlqndcsdfdprynfaqyv.supabase.co';
+const SUPABASE_KEY='sb_publishable_5tRViQsF2R7sbxeQHPL62A_JwUVh7hc';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+const ADMIN_PASSWORD='sdb2024';
+let allFarmers=[];
+let lang='en';
 
-const ADMIN_PASSWORD = 'sdb2024';
-let allFarmers = [];
-let lang = 'en';
+function setLang(l){lang=l;document.getElementById('btnEn').classList.toggle('active',l==='en');document.getElementById('btnTe').classList.toggle('active',l==='te');}
 
-function setLang(l){
-  lang=l;
-  document.getElementById('btnEn').classList.toggle('active',l==='en');
-  document.getElementById('btnTe').classList.toggle('active',l==='te');
+function showAlert(id,msg,type){
+  const el=document.getElementById(id);
+  el.style.display='block';el.className='alert alert-'+(type||'error');el.textContent=msg;
+  setTimeout(()=>el.style.display='none',5000);
 }
 
-function showAlert(id, msg, type){
-  const el = document.getElementById(id);
-  el.style.display = 'block';
-  el.className = 'alert alert-' + (type||'error');
-  el.textContent = msg;
-  setTimeout(()=>el.style.display='none', 4000);
-}
+function simpleHash(str){let hash=0;for(let i=0;i<str.length;i++){hash=((hash<<5)-hash)+str.charCodeAt(i);hash|=0;}return Math.abs(hash).toString(16);}
 
 async function doAdminLogin(){
-  const phone = document.getElementById('admin-phone').value.trim();
-  const pass = document.getElementById('admin-pass').value.trim();
-  if(!phone || !pass){ showAlert('login-alert','Enter phone and password'); return; }
-  const btn = document.getElementById('admin-login-btn');
-  btn.disabled=true; btn.textContent='Checking...';
+  const phone=document.getElementById('admin-phone').value.trim();
+  const pass=document.getElementById('admin-pass').value.trim();
+  if(!phone||!pass){showAlert('login-alert','Enter phone and password');return;}
+  const btn=document.getElementById('admin-login-btn');
+  btn.disabled=true;btn.textContent='Checking...';
   try{
-    const {data} = await sb.from('admins').select('*').eq('phone', phone).single();
-    if(!data){ showAlert('login-alert','Not an admin. Contact Dorababu.'); btn.disabled=false; btn.textContent='Login to Admin Panel →'; return; }
-    if(pass !== ADMIN_PASSWORD && pass !== 'sdb2024'){
-      showAlert('login-alert','Wrong password.'); btn.disabled=false; btn.textContent='Login to Admin Panel →'; return;
-    }
-    localStorage.setItem('sdb_admin', JSON.stringify(data));
+    const {data}=await sb.from('admins').select('*').eq('phone',phone).single();
+    if(!data){showAlert('login-alert','Not an admin. Contact Dorababu.');btn.disabled=false;btn.textContent='Login to Admin Panel →';return;}
+    if(pass!==ADMIN_PASSWORD){showAlert('login-alert','Wrong password.');btn.disabled=false;btn.textContent='Login to Admin Panel →';return;}
+    localStorage.setItem('sdb_admin',JSON.stringify(data));
     document.getElementById('admin-login').style.display='none';
     document.getElementById('admin-dash').style.display='block';
-    document.getElementById('admin-welcome').textContent='Welcome, ' + data.full_name;
+    document.getElementById('admin-welcome').textContent='Welcome, '+data.full_name;
     initDashboard();
-  }catch(e){ showAlert('login-alert','Error: '+e.message); }
-  btn.disabled=false; btn.textContent='Login to Admin Panel →';
+  }catch(e){showAlert('login-alert','Error: '+e.message);}
+  btn.disabled=false;btn.textContent='Login to Admin Panel →';
 }
 
 function doAdminLogout(){
@@ -356,52 +397,60 @@ function doAdminLogout(){
 }
 
 async function initDashboard(){
-  const today = new Date().toISOString().split('T')[0];
-  document.getElementById('price-date').value = today;
-  document.getElementById('sale-date').value = today;
-  document.getElementById('pay-date').value = today;
-  document.getElementById('export-from').value = new Date(new Date().setDate(1)).toISOString().split('T')[0];
-  document.getElementById('export-to').value = today;
+  const today=new Date().toISOString().split('T')[0];
+  document.getElementById('price-date').value=today;
+  document.getElementById('sale-date').value=today;
+  document.getElementById('pay-date').value=today;
+  document.getElementById('export-from').value=new Date(new Date().setDate(1)).toISOString().split('T')[0];
+  document.getElementById('export-to').value=today;
   await loadStats();
   await loadFarmers();
   await loadPriceHistory();
+  await loadResetRequests();
 }
 
 async function loadStats(){
   try{
-    const {data:farmers} = await sb.from('farmers').select('id');
-    const {data:sales} = await sb.from('sales').select('total_amount');
-    const {data:payments} = await sb.from('payments').select('amount');
-    const {data:price} = await sb.from('lemon_prices').select('price_per_kg').eq('date', new Date().toISOString().split('T')[0]).single();
-    const totalSales = (sales||[]).reduce((s,r)=>s+Number(r.total_amount),0);
-    const totalPaid = (payments||[]).reduce((s,r)=>s+Number(r.amount),0);
-    document.getElementById('s-farmers').textContent = (farmers||[]).length;
-    document.getElementById('s-sales').textContent = '₹'+totalSales.toLocaleString('en-IN');
-    document.getElementById('s-pending').textContent = '₹'+Math.max(0,totalSales-totalPaid).toLocaleString('en-IN');
-    document.getElementById('s-today').textContent = price ? '₹'+price.price_per_kg : 'Not set';
+    const {data:farmers}=await sb.from('farmers').select('id');
+    const {data:sales}=await sb.from('sales').select('total_amount');
+    const {data:payments}=await sb.from('payments').select('amount');
+    const {data:price}=await sb.from('lemon_prices').select('price_min,price_max,price_per_kg').order('date',{ascending:false}).limit(1).single();
+    let resets=0;
+    try{const {data:r}=await sb.from('password_resets').select('id').eq('status','pending');resets=(r||[]).length;}catch(e){}
+    const totalSales=(sales||[]).reduce((s,r)=>s+Number(r.total_amount),0);
+    const totalPaid=(payments||[]).reduce((s,r)=>s+Number(r.amount),0);
+    document.getElementById('s-farmers').textContent=(farmers||[]).length;
+    document.getElementById('s-sales').textContent='₹'+totalSales.toLocaleString('en-IN');
+    document.getElementById('s-pending').textContent='₹'+Math.max(0,totalSales-totalPaid).toLocaleString('en-IN');
+    document.getElementById('s-resets').textContent=resets;
+    if(price){
+      const minP=price.price_min||price.price_per_kg||'--';
+      const maxP=price.price_max||price.price_per_kg||'--';
+      document.getElementById('s-today').textContent='₹'+minP+'-'+maxP;
+      document.getElementById('current-range-val').textContent='₹'+minP+' — ₹'+maxP+'/kg';
+      document.getElementById('price-range-hint').textContent='Today\'s range: ₹'+minP+' - ₹'+maxP+'/kg';
+      document.getElementById('price-min').value=minP;
+      document.getElementById('price-max').value=maxP;
+    }
   }catch(e){}
 }
 
 async function loadFarmers(){
   try{
-    const {data} = await sb.from('farmers').select('*').order('full_name');
-    allFarmers = data||[];
-    const selectors = ['sale-farmer','pay-farmer','export-farmer'];
-    selectors.forEach(id=>{
-      const sel = document.getElementById(id);
-      const isExport = id==='export-farmer';
-      sel.innerHTML = isExport ? '<option value="all">All Farmers</option>' : '<option value="">-- Select Farmer --</option>';
+    const {data}=await sb.from('farmers').select('*').order('full_name');
+    allFarmers=data||[];
+    ['sale-farmer','pay-farmer','export-farmer','reset-farmer-select'].forEach(id=>{
+      const sel=document.getElementById(id);
+      const isExport=id==='export-farmer';
+      sel.innerHTML=isExport?'<option value="all">All Farmers</option>':'<option value="">-- Select Farmer --</option>';
       allFarmers.forEach(f=>{
-        const opt = document.createElement('option');
-        opt.value = f.id;
-        opt.textContent = f.full_name + ' — ' + f.village;
+        const opt=document.createElement('option');
+        opt.value=f.id;
+        opt.textContent=f.full_name+' — '+f.village;
         sel.appendChild(opt);
       });
     });
     renderFarmersList(allFarmers);
-    const today = new Date().toISOString().split('T')[0];
-    const {data:price} = await sb.from('lemon_prices').select('price_per_kg').eq('date',today).single();
-    if(price) document.getElementById('sale-price').value = price.price_per_kg;
   }catch(e){}
 }
 
@@ -410,35 +459,65 @@ function renderFarmersList(farmers){
     document.getElementById('farmers-list').innerHTML='<div class="empty-state"><div class="icon">👨‍🌾</div><p>No farmers registered yet</p></div>';
     return;
   }
-  const rows = farmers.map(f=>`
+  const rows=farmers.map(f=>`
     <tr>
       <td><strong>${f.full_name}</strong></td>
       <td>${f.village}</td>
       <td>${f.phone}</td>
       <td>${f.aadhaar}</td>
       <td>${new Date(f.created_at).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</td>
-      <td><button class="btn-sm btn-sm-green" onclick="viewFarmer('${f.id}')">View Records</button></td>
+      <td style="display:flex;gap:6px;flex-wrap:wrap">
+        <button class="btn-sm btn-sm-green" onclick="viewFarmer('${f.id}')">View</button>
+        <button class="btn-sm btn-sm-red" onclick="deleteFarmer('${f.id}','${f.full_name}')">Delete</button>
+      </td>
     </tr>`).join('');
   document.getElementById('farmers-list').innerHTML=`<div class="table-wrap"><table><thead><tr><th>Name</th><th>Village</th><th>Phone</th><th>Aadhaar</th><th>Registered</th><th>Action</th></tr></thead><tbody>${rows}</tbody></table></div>`;
 }
 
 function searchFarmers(){
-  const q = document.getElementById('farmer-search').value.toLowerCase();
-  const filtered = allFarmers.filter(f=>f.full_name.toLowerCase().includes(q)||f.village.toLowerCase().includes(q)||f.phone.includes(q));
+  const q=document.getElementById('farmer-search').value.toLowerCase();
+  const filtered=allFarmers.filter(f=>f.full_name.toLowerCase().includes(q)||f.village.toLowerCase().includes(q)||f.phone.includes(q));
   renderFarmersList(filtered);
 }
 
+async function deleteFarmer(id,name){
+  // Check pending amount first
+  const {data:sales}=await sb.from('sales').select('total_amount').eq('farmer_id',id);
+  const {data:payments}=await sb.from('payments').select('amount').eq('farmer_id',id);
+  const totalS=(sales||[]).reduce((s,r)=>s+Number(r.total_amount),0);
+  const totalP=(payments||[]).reduce((s,r)=>s+Number(r.amount),0);
+  const pending=totalS-totalP;
+  if(pending>0){
+    alert(`❌ Cannot delete ${name}!\n\nPending amount: ₹${pending.toLocaleString('en-IN')} is still due.\n\nPlease clear all payments before deleting this farmer.`);
+    return;
+  }
+  const confirm1=confirm(`⚠️ Delete farmer: ${name}?\n\nThis will permanently delete:\n- Farmer account\n- All sales records\n- All payment records\n\nThis cannot be undone!`);
+  if(!confirm1) return;
+  const confirm2=confirm(`Are you absolutely sure you want to delete ${name}? Type OK to confirm.`);
+  if(!confirm2) return;
+  try{
+    await sb.from('sales').delete().eq('farmer_id',id);
+    await sb.from('payments').delete().eq('farmer_id',id);
+    try{await sb.from('password_resets').delete().eq('farmer_id',id);}catch(e){}
+    await sb.from('farmers').delete().eq('id',id);
+    alert(`✅ Farmer ${name} deleted successfully.`);
+    await loadFarmers();
+    await loadStats();
+  }catch(e){alert('Error deleting farmer: '+e.message);}
+}
+
 async function viewFarmer(id){
-  const farmer = allFarmers.find(f=>f.id===id);
+  const farmer=allFarmers.find(f=>f.id===id);
   if(!farmer) return;
-  const {data:sales} = await sb.from('sales').select('*').eq('farmer_id',id).order('date',{ascending:false});
-  const {data:payments} = await sb.from('payments').select('*').eq('farmer_id',id).order('date',{ascending:false});
+  const {data:sales}=await sb.from('sales').select('*').eq('farmer_id',id).order('date',{ascending:false});
+  const {data:payments}=await sb.from('payments').select('*').eq('farmer_id',id).order('date',{ascending:false});
   const totalSales=(sales||[]).reduce((s,r)=>s+Number(r.total_amount),0);
   const totalPaid=(payments||[]).reduce((s,r)=>s+Number(r.amount),0);
   const totalKg=(sales||[]).reduce((s,r)=>s+Number(r.weight_kg),0);
   const pending=totalSales-totalPaid;
-  const salesRows=(sales||[]).map(s=>`<tr><td>${new Date(s.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</td><td>${s.weight_kg} kg</td><td>₹${s.price_per_kg}</td><td>₹${Number(s.total_amount).toLocaleString('en-IN')}</td></tr>`).join('');
+  const salesRows=(sales||[]).map(s=>`<tr><td>${new Date(s.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</td><td>${s.weight_kg} kg</td><td>₹${s.price_per_kg}</td><td>${s.quality||'--'}</td><td>₹${Number(s.total_amount).toLocaleString('en-IN')}</td></tr>`).join('');
   const payRows=(payments||[]).map(p=>`<tr><td>${new Date(p.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}</td><td style="color:var(--green);font-weight:600">₹${Number(p.amount).toLocaleString('en-IN')}</td><td>${p.payment_mode}</td></tr>`).join('');
+  const canDelete=pending===0;
   document.getElementById('farmers-list').innerHTML=`
     <button class="btn-sm" onclick="renderFarmersList(allFarmers)" style="margin-bottom:1rem">← Back to all farmers</button>
     <div class="farmer-detail-card">
@@ -452,54 +531,65 @@ async function viewFarmer(id){
     </div>
     <div style="margin-bottom:1rem"><strong>Sales Records</strong></div>
     <div class="table-wrap" style="margin-bottom:1.5rem">
-      ${sales&&sales.length>0?`<table><thead><tr><th>Date</th><th>Kg</th><th>Price/kg</th><th>Amount</th></tr></thead><tbody>${salesRows}</tbody></table>`:'<p style="color:var(--muted);font-size:13px">No sales yet</p>'}
+      ${sales&&sales.length>0?`<table><thead><tr><th>Date</th><th>Kg</th><th>Price/kg</th><th>Quality</th><th>Amount</th></tr></thead><tbody>${salesRows}</tbody></table>`:'<p style="color:var(--muted);font-size:13px">No sales yet</p>'}
     </div>
     <div style="margin-bottom:1rem"><strong>Payment Records</strong></div>
-    <div class="table-wrap">
+    <div class="table-wrap" style="margin-bottom:1.5rem">
       ${payments&&payments.length>0?`<table><thead><tr><th>Date</th><th>Amount Paid</th><th>Mode</th></tr></thead><tbody>${payRows}</tbody></table>`:'<p style="color:var(--muted);font-size:13px">No payments yet</p>'}
+    </div>
+    <div class="danger-zone">
+      <h4>⚠️ Danger Zone — Delete Farmer Account</h4>
+      <p>${canDelete?'All payments are cleared. You can safely delete this farmer account.':'Cannot delete: Farmer has pending payment of ₹'+pending.toLocaleString('en-IN')+'. Clear all payments first.'}</p>
+      <button class="btn-sm btn-sm-red" onclick="deleteFarmer('${farmer.id}','${farmer.full_name}')" ${canDelete?'':'disabled'} style="${canDelete?'':'opacity:0.5;cursor:not-allowed'}">${canDelete?'🗑️ Delete Farmer Account':'🔒 Cannot Delete (Pending Due)'}</button>
     </div>`;
 }
 
 async function updatePrice(){
-  const date = document.getElementById('price-date').value;
-  const price = document.getElementById('price-val').value;
-  if(!date||!price||price<=0){ showAlert('price-alert','Enter valid date and price'); return; }
+  const date=document.getElementById('price-date').value;
+  const minP=document.getElementById('price-min').value;
+  const maxP=document.getElementById('price-max').value;
+  if(!date||!minP||!maxP){showAlert('price-alert','Enter date, minimum and maximum price');return;}
+  if(Number(minP)>Number(maxP)){showAlert('price-alert','Minimum price cannot be more than maximum price');return;}
   try{
-    const {error} = await sb.from('lemon_prices').upsert([{date,price_per_kg:Number(price)}],{onConflict:'date'});
-    if(error){ showAlert('price-alert','Error: '+error.message); return; }
-    showAlert('price-alert','Price updated successfully! ₹'+price+'/kg for '+date,'success');
-    document.getElementById('s-today').textContent='₹'+price;
-    document.getElementById('sale-price').value=price;
+    const {error}=await sb.from('lemon_prices').upsert([{date,price_min:Number(minP),price_max:Number(maxP),price_per_kg:Number(minP)}],{onConflict:'date'});
+    if(error){showAlert('price-alert','Error: '+error.message);return;}
+    showAlert('price-alert','✅ Price range updated! ₹'+minP+' — ₹'+maxP+'/kg for '+date,'success');
+    document.getElementById('current-range-val').textContent='₹'+minP+' — ₹'+maxP+'/kg';
+    document.getElementById('s-today').textContent='₹'+minP+'-'+maxP;
+    document.getElementById('price-range-hint').textContent='Today\'s range: ₹'+minP+' - ₹'+maxP+'/kg';
     await loadPriceHistory();
-  }catch(e){ showAlert('price-alert','Error: '+e.message); }
+  }catch(e){showAlert('price-alert','Error: '+e.message);}
 }
 
 async function loadPriceHistory(){
   try{
-    const {data} = await sb.from('lemon_prices').select('*').order('date',{ascending:false}).limit(15);
-    if(!data||data.length===0){ document.getElementById('price-history-table').innerHTML='<p style="color:var(--muted);font-size:13px">No price history yet</p>'; return; }
-    const rows = data.map(p=>`<tr><td>${new Date(p.date).toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'})}</td><td style="font-weight:700;color:var(--green);font-size:15px">₹${p.price_per_kg}/kg</td></tr>`).join('');
-    document.getElementById('price-history-table').innerHTML=`<div class="table-wrap"><table><thead><tr><th>Date</th><th>Price per kg</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    const {data}=await sb.from('lemon_prices').select('*').order('date',{ascending:false}).limit(15);
+    if(!data||data.length===0){document.getElementById('price-history-table').innerHTML='<p style="color:var(--muted);font-size:13px">No price history yet</p>';return;}
+    const rows=data.map(p=>{
+      const minP=p.price_min||p.price_per_kg||'--';
+      const maxP=p.price_max||p.price_per_kg||'--';
+      return `<tr><td>${new Date(p.date).toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'})}</td><td style="font-weight:700;color:var(--amber)">₹${minP}</td><td style="font-weight:700;color:var(--green)">₹${maxP}</td><td style="font-weight:600">₹${minP} — ₹${maxP}/kg</td></tr>`;
+    }).join('');
+    document.getElementById('price-history-table').innerHTML=`<div class="table-wrap"><table><thead><tr><th>Date</th><th>Min Price</th><th>Max Price</th><th>Range</th></tr></thead><tbody>${rows}</tbody></table></div>`;
   }catch(e){}
 }
 
 function calcAmount(){
-  const kg = parseFloat(document.getElementById('sale-kg').value)||0;
-  const price = parseFloat(document.getElementById('sale-price').value)||0;
-  const total = kg*price;
-  document.getElementById('calc-total').textContent='₹'+total.toLocaleString('en-IN');
+  const kg=parseFloat(document.getElementById('sale-kg').value)||0;
+  const price=parseFloat(document.getElementById('sale-price').value)||0;
+  document.getElementById('calc-total').textContent='₹'+(kg*price).toLocaleString('en-IN');
 }
 
 async function onFarmerSelect(){
-  const id = document.getElementById('sale-farmer').value;
-  if(!id){ document.getElementById('selected-farmer-info').innerHTML=''; return; }
-  const f = allFarmers.find(x=>x.id===id);
+  const id=document.getElementById('sale-farmer').value;
+  if(!id){document.getElementById('selected-farmer-info').innerHTML='';return;}
+  const f=allFarmers.find(x=>x.id===id);
   if(!f) return;
   const {data:sales}=await sb.from('sales').select('total_amount').eq('farmer_id',id);
   const {data:payments}=await sb.from('payments').select('amount').eq('farmer_id',id);
   const totalS=(sales||[]).reduce((s,r)=>s+Number(r.total_amount),0);
   const totalP=(payments||[]).reduce((s,r)=>s+Number(r.amount),0);
-  document.getElementById('selected-farmer-info').innerHTML=`<div class="farmer-detail-card" style="margin-bottom:1rem"><div class="fdc-name">${f.full_name}</div><div class="fdc-info">Village: ${f.village} | Phone: ${f.phone} | Pending: ₹${Math.max(0,totalS-totalP).toLocaleString('en-IN')}</div></div>`;
+  document.getElementById('selected-farmer-info').innerHTML=`<div class="farmer-detail-card" style="margin-bottom:1rem"><div class="fdc-name">${f.full_name}</div><div class="fdc-info">Village: ${f.village} | Phone: ${f.phone} | Current Pending: ₹${Math.max(0,totalS-totalP).toLocaleString('en-IN')}</div></div>`;
 }
 
 async function addSale(){
@@ -507,15 +597,16 @@ async function addSale(){
   const date=document.getElementById('sale-date').value;
   const kg=parseFloat(document.getElementById('sale-kg').value);
   const price=parseFloat(document.getElementById('sale-price').value);
+  const quality=document.getElementById('sale-quality').value;
   if(!farmerId){showAlert('sale-alert','Select a farmer');return;}
   if(!date){showAlert('sale-alert','Select date');return;}
   if(!kg||kg<=0){showAlert('sale-alert','Enter valid weight in kg');return;}
   if(!price||price<=0){showAlert('sale-alert','Enter valid price');return;}
   const total=kg*price;
   try{
-    const {error}=await sb.from('sales').insert([{farmer_id:farmerId,date,weight_kg:kg,price_per_kg:price,total_amount:total}]);
+    const {error}=await sb.from('sales').insert([{farmer_id:farmerId,date,weight_kg:kg,price_per_kg:price,total_amount:total,quality}]);
     if(error){showAlert('sale-alert','Error: '+error.message);return;}
-    showAlert('sale-alert',`Sale saved! ${kg}kg × ₹${price} = ₹${total.toLocaleString('en-IN')}. Pending updated.`,'success');
+    showAlert('sale-alert',`✅ Sale saved! ${kg}kg × ₹${price} (${quality}) = ₹${total.toLocaleString('en-IN')}`,'success');
     document.getElementById('sale-kg').value='';
     document.getElementById('calc-total').textContent='₹0';
     await loadStats();
@@ -549,10 +640,68 @@ async function recordPayment(){
     const {error}=await sb.from('payments').insert([{farmer_id:farmerId,amount,payment_mode:mode,date}]);
     if(error){showAlert('payment-alert','Error: '+error.message);return;}
     const f=allFarmers.find(x=>x.id===farmerId);
-    showAlert('payment-alert',`Payment of ₹${amount.toLocaleString('en-IN')} recorded for ${f?f.full_name:'farmer'} via ${mode}`,'success');
+    showAlert('payment-alert',`✅ Payment of ₹${amount.toLocaleString('en-IN')} recorded for ${f?f.full_name:'farmer'} via ${mode}`,'success');
     await loadStats();
     await onPayFarmerSelect();
   }catch(e){showAlert('payment-alert','Error: '+e.message);}
+}
+
+async function loadResetRequests(){
+  try{
+    const {data}=await sb.from('password_resets').select('*').eq('status','pending').order('created_at',{ascending:false});
+    if(!data||data.length===0){
+      document.getElementById('resets-list').innerHTML='<div class="empty-state"><div class="icon">✅</div><p>No pending password reset requests</p></div>';
+      return;
+    }
+    const cards=data.map(r=>`
+      <div class="reset-request-card" id="reset-${r.id}">
+        <div class="rrc-info">
+          <div class="name">👨‍🌾 ${r.full_name}</div>
+          <div class="details">📱 ${r.phone} | 🏘️ ${r.village} | Requested: ${new Date(r.created_at).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit'})}</div>
+        </div>
+        <div class="rrc-actions">
+          <input class="new-pass-input" type="text" id="np-${r.id}" placeholder="New password" value="sdb${r.phone.slice(-4)}">
+          <button class="btn-sm btn-sm-green" onclick="resetFarmerPassword('${r.id}','${r.farmer_id}','${r.full_name}','${r.phone}')">✅ Reset</button>
+          <button class="btn-sm btn-sm-red" onclick="dismissReset('${r.id}')">✖ Dismiss</button>
+        </div>
+      </div>`).join('');
+    document.getElementById('resets-list').innerHTML=cards;
+    document.getElementById('s-resets').textContent=data.length;
+  }catch(e){
+    document.getElementById('resets-list').innerHTML='<div class="empty-state"><div class="icon">⚠️</div><p>Password reset table not set up yet. Run the SQL in Supabase first.</p></div>';
+  }
+}
+
+async function resetFarmerPassword(resetId,farmerId,name,phone){
+  const newPass=document.getElementById('np-'+resetId).value.trim();
+  if(!newPass||newPass.length<4){alert('Enter a valid new password (min 4 characters)');return;}
+  try{
+    const {error}=await sb.from('farmers').update({password_hash:simpleHash(newPass)}).eq('id',farmerId);
+    if(error){alert('Error: '+error.message);return;}
+    await sb.from('password_resets').update({status:'done'}).eq('id',resetId);
+    document.getElementById('reset-'+resetId).remove();
+    alert(`✅ Password reset for ${name}!\n\nNew password: ${newPass}\n\nPlease inform the farmer on: ${phone}`);
+    await loadStats();
+  }catch(e){alert('Error: '+e.message);}
+}
+
+async function dismissReset(resetId){
+  await sb.from('password_resets').update({status:'dismissed'}).eq('id',resetId);
+  document.getElementById('reset-'+resetId).remove();
+}
+
+async function directResetPassword(){
+  const farmerId=document.getElementById('reset-farmer-select').value;
+  const newPass=document.getElementById('reset-new-pass').value.trim();
+  if(!farmerId){showAlert('direct-reset-alert','Select a farmer');return;}
+  if(!newPass||newPass.length<4){showAlert('direct-reset-alert','Enter valid new password (min 4 chars)');return;}
+  const farmer=allFarmers.find(f=>f.id===farmerId);
+  try{
+    const {error}=await sb.from('farmers').update({password_hash:simpleHash(newPass)}).eq('id',farmerId);
+    if(error){showAlert('direct-reset-alert','Error: '+error.message);return;}
+    showAlert('direct-reset-alert',`✅ Password reset for ${farmer?farmer.full_name:'farmer'}! New password: ${newPass} — Please inform them on ${farmer?farmer.phone:''}`,'success');
+    document.getElementById('reset-new-pass').value='';
+  }catch(e){showAlert('direct-reset-alert','Error: '+e.message);}
 }
 
 async function exportCSV(){
@@ -560,18 +709,16 @@ async function exportCSV(){
   const from=document.getElementById('export-from').value;
   const to=document.getElementById('export-to').value;
   try{
-    let salesQ=sb.from('sales').select('*,farmers(full_name,village,phone)').gte('date',from).lte('date',to).order('date',{ascending:false});
-    if(farmerId!=='all') salesQ=salesQ.eq('farmer_id',farmerId);
-    const {data:sales}=await salesQ;
-    if(!sales||sales.length===0){alert('No records found for selected period');return;}
-    let csv='Date,Farmer Name,Village,Phone,Weight (kg),Price/kg,Total Amount\n';
-    sales.forEach(s=>{
-      csv+=`${s.date},"${s.farmers?.full_name||''}","${s.farmers?.village||''}","${s.farmers?.phone||''}",${s.weight_kg},${s.price_per_kg},${s.total_amount}\n`;
-    });
+    let q=sb.from('sales').select('*,farmers(full_name,village,phone)').gte('date',from).lte('date',to).order('date',{ascending:false});
+    if(farmerId!=='all') q=q.eq('farmer_id',farmerId);
+    const {data:sales}=await q;
+    if(!sales||sales.length===0){alert('No records found');return;}
+    let csv='Date,Farmer Name,Village,Phone,Weight (kg),Price/kg,Quality,Total Amount\n';
+    sales.forEach(s=>{csv+=`${s.date},"${s.farmers?.full_name||''}","${s.farmers?.village||''}","${s.farmers?.phone||''}",${s.weight_kg},${s.price_per_kg},"${s.quality||''}",${s.total_amount}\n`;});
     const blob=new Blob([csv],{type:'text/csv'});
     const url=URL.createObjectURL(blob);
     const a=document.createElement('a');
-    a.href=url;a.download=`SDB_Lemons_Sales_${from}_to_${to}.csv`;a.click();
+    a.href=url;a.download=`SDB_Lemons_${from}_to_${to}.csv`;a.click();
     URL.revokeObjectURL(url);
   }catch(e){alert('Export error: '+e.message);}
 }
@@ -581,35 +728,28 @@ async function exportPrint(){
   const from=document.getElementById('export-from').value;
   const to=document.getElementById('export-to').value;
   try{
-    let salesQ=sb.from('sales').select('*,farmers(full_name,village,phone)').gte('date',from).lte('date',to).order('date',{ascending:false});
-    if(farmerId!=='all') salesQ=salesQ.eq('farmer_id',farmerId);
-    const {data:sales}=await salesQ;
+    let q=sb.from('sales').select('*,farmers(full_name,village,phone)').gte('date',from).lte('date',to).order('date',{ascending:false});
+    if(farmerId!=='all') q=q.eq('farmer_id',farmerId);
+    const {data:sales}=await q;
     const total=(sales||[]).reduce((s,r)=>s+Number(r.total_amount),0);
-    const rows=(sales||[]).map(s=>`<tr><td>${s.date}</td><td>${s.farmers?.full_name}</td><td>${s.farmers?.village}</td><td>${s.weight_kg} kg</td><td>₹${s.price_per_kg}</td><td>₹${Number(s.total_amount).toLocaleString('en-IN')}</td></tr>`).join('');
+    const rows=(sales||[]).map(s=>`<tr><td>${s.date}</td><td>${s.farmers?.full_name}</td><td>${s.farmers?.village}</td><td>${s.weight_kg}kg</td><td>₹${s.price_per_kg}</td><td>${s.quality||'--'}</td><td>₹${Number(s.total_amount).toLocaleString('en-IN')}</td></tr>`).join('');
     const win=window.open('','_blank');
-    win.document.write(`<html><head><title>SDB Lemons — Sales Report</title><style>body{font-family:Arial,sans-serif;padding:20px}h2{color:#2d7a3a}table{width:100%;border-collapse:collapse;margin-top:16px}th,td{border:1px solid #ddd;padding:8px;font-size:13px}th{background:#e8f5ea;color:#1a5c27}.total{font-size:16px;font-weight:bold;margin-top:12px;color:#2d7a3a}</style></head><body><h2>🍋 SDB Lemons — Sales Report</h2><p>Period: ${from} to ${to}</p><table><thead><tr><th>Date</th><th>Farmer</th><th>Village</th><th>Kg</th><th>Price/kg</th><th>Amount</th></tr></thead><tbody>${rows}</tbody></table><p class="total">Total: ₹${total.toLocaleString('en-IN')}</p></body></html>`);
+    win.document.write(`<html><head><title>SDB Lemons Report</title><style>body{font-family:Arial,sans-serif;padding:20px}h2{color:#2d7a3a}table{width:100%;border-collapse:collapse;margin-top:16px}th,td{border:1px solid #ddd;padding:8px;font-size:12px}th{background:#e8f5ea}.total{font-size:16px;font-weight:bold;margin-top:12px;color:#2d7a3a}</style></head><body><h2>🍋 SDB Lemons — Sales Report</h2><p>Period: ${from} to ${to}</p><table><thead><tr><th>Date</th><th>Farmer</th><th>Village</th><th>Kg</th><th>Price/kg</th><th>Quality</th><th>Amount</th></tr></thead><tbody>${rows}</tbody></table><p class="total">Total: ₹${total.toLocaleString('en-IN')}</p></body></html>`);
     win.print();
   }catch(e){alert('Print error: '+e.message);}
 }
 
-function showTab(name){
+function showTab(name,el){
   document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
   document.getElementById('tab-'+name).classList.add('active');
-  event.target.classList.add('active');
+  el.classList.add('active');
+  if(name==='resets') loadResetRequests();
 }
 
 window.addEventListener('load',()=>{
   const saved=localStorage.getItem('sdb_admin');
-  if(saved){
-    try{
-      const a=JSON.parse(saved);
-      document.getElementById('admin-login').style.display='none';
-      document.getElementById('admin-dash').style.display='block';
-      document.getElementById('admin-welcome').textContent='Welcome, '+a.full_name;
-      initDashboard();
-    }catch(e){}
-  }
+  if(saved){try{const a=JSON.parse(saved);document.getElementById('admin-login').style.display='none';document.getElementById('admin-dash').style.display='block';document.getElementById('admin-welcome').textContent='Welcome, '+a.full_name;initDashboard();}catch(e){}}
 });
 </script>
 </body>
