@@ -10,14 +10,14 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--green:#2d7a3a;--green-light:#e8f5ea;--yellow:#f5c518;--yellow-light:#fffbe6;--text:#1a1a1a;--muted:#666;--border:#e5e7eb;--bg:#fff;--bg2:#f9fafb}
-body{font-family:'Inter',sans-serif;color:var(--text);background:var(--bg2)}
+body{font-family:'Inter','Noto Sans Telugu',sans-serif;color:var(--text);background:var(--bg2)}
 nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;display:flex;align-items:center;justify-content:space-between;height:62px;position:sticky;top:0;z-index:100;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo-icon{width:40px;height:40px;background:var(--yellow);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px}
 .logo-text{font-size:18px;font-weight:600;color:var(--text)}
 .logo-text span{color:var(--green)}
 .nav-right{display:flex;align-items:center;gap:8px}
-.nav-btn{padding:8px 16px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;border:1px solid var(--border);background:#fff;color:var(--text);transition:all 0.15s}
+.nav-btn{padding:8px 16px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;text-decoration:none;border:1px solid var(--border);background:#fff;color:var(--text)}
 .nav-btn.primary{background:var(--green);color:#fff;border-color:var(--green)}
 .lang-toggle{display:flex;border:1px solid var(--border);border-radius:8px;overflow:hidden}
 .lang-btn{padding:6px 12px;font-size:12px;border:none;background:none;cursor:pointer;color:var(--muted);font-weight:500}
@@ -37,15 +37,12 @@ nav{background:#fff;border-bottom:1px solid var(--border);padding:0 1.5rem;displ
 .price-quality{display:flex;gap:8px;justify-content:center;margin-top:10px;flex-wrap:wrap}
 .quality-badge{font-size:11px;padding:3px 10px;border-radius:12px;font-weight:500}
 .q-low{background:#fef9c3;color:#854d0e}
-.q-mid{background:#dbeafe;color:#1e40af}
 .q-high{background:#dcfce7;color:#166534}
 .price-date{font-size:11px;color:var(--muted);margin-top:8px}
 .hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn{padding:11px 26px;border-radius:9px;font-size:14px;font-weight:500;cursor:pointer;border:none;text-decoration:none;display:inline-block;transition:all 0.15s}
+.btn{padding:11px 26px;border-radius:9px;font-size:14px;font-weight:500;cursor:pointer;border:none;text-decoration:none;display:inline-block}
 .btn-green{background:var(--green);color:#fff}
-.btn-green:hover{background:#245f2d}
 .btn-outline{background:#fff;color:var(--text);border:1px solid var(--border)}
-.btn-outline:hover{background:var(--bg2)}
 .section{padding:2.5rem 1.5rem;background:#fff;margin-top:12px}
 .section-title{font-size:22px;font-weight:600;color:var(--text);margin-bottom:0.3rem}
 .section-sub{font-size:14px;color:var(--muted);margin-bottom:1.5rem}
@@ -134,26 +131,26 @@ footer p{font-size:13px;margin-top:4px}
     <div class="stat-card"><div class="stat-icon">✅</div><div class="stat-val">100%</div><div class="stat-lbl" id="lbl-transparent">Transparent pricing</div></div>
   </div>
   <div style="margin-top:1.5rem;padding:1.2rem;background:var(--yellow-light);border-radius:12px;border:1px solid #e0c800;">
-    <p style="font-size:15px;color:#5c4200;line-height:1.7;">SDB Lemons has been a trusted name in the Lemon Market for over 20 years. Founded by <strong>Sanam Dorababu</strong>, we have built strong relationships with hundreds of farmers across the region. We believe in fair pricing, transparent transactions, and timely payments to every farmer who trusts us with their harvest.</p>
+    <p id="about-story" style="font-size:15px;color:#5c4200;line-height:1.7;">SDB Lemons has been a trusted name in the Lemon Market for over 20 years. Founded by <strong>Sanam Dorababu</strong>, we have built strong relationships with hundreds of farmers across the region. We believe in fair pricing, transparent transactions, and timely payments to every farmer who trusts us with their harvest.</p>
   </div>
 </div>
 
 <div class="section" style="margin-top:0;border-top:1px solid var(--border)">
-  <div class="section-title">Shop & Owner Photos</div>
-  <div class="section-sub">Add your photos to make this section come alive</div>
+  <div class="section-title" id="photos-title">Shop & Owner Photos</div>
+  <div class="section-sub" id="photos-sub">Add your photos to make this section come alive</div>
   <div class="photos-grid">
-    <div class="photo-box"><div class="icon">👤</div><span>Owner Photo</span></div>
-    <div class="photo-box"><div class="icon">🏪</div><span>Shop Front</span></div>
-    <div class="photo-box"><div class="icon">🌿</div><span>Lemon Farm</span></div>
-    <div class="photo-box"><div class="icon">⚖️</div><span>Weighing Area</span></div>
-    <div class="photo-box"><div class="icon">👥</div><span>Team Photo</span></div>
-    <div class="photo-box"><div class="icon">🏆</div><span>Achievements</span></div>
+    <div class="photo-box"><div class="icon">👤</div><span id="p1">Owner Photo</span></div>
+    <div class="photo-box"><div class="icon">🏪</div><span id="p2">Shop Front</span></div>
+    <div class="photo-box"><div class="icon">🌿</div><span id="p3">Lemon Farm</span></div>
+    <div class="photo-box"><div class="icon">⚖️</div><span id="p4">Weighing Area</span></div>
+    <div class="photo-box"><div class="icon">👥</div><span id="p5">Team Photo</span></div>
+    <div class="photo-box"><div class="icon">🏆</div><span id="p6">Achievements</span></div>
   </div>
 </div>
 
 <div class="section" id="price-history" style="margin-top:0;border-top:1px solid var(--border)">
-  <div class="section-title">Lemon Price History</div>
-  <div class="section-sub">Track how prices change over time</div>
+  <div class="section-title" id="price-hist-title">Lemon Price History</div>
+  <div class="section-sub" id="price-hist-sub">Track how prices change over time</div>
   <div class="chart-tabs">
     <button class="chart-tab active" onclick="loadChart(7,this)" id="tab-7">7 Days</button>
     <button class="chart-tab" onclick="loadChart(30,this)" id="tab-30">30 Days</button>
@@ -165,32 +162,32 @@ footer p{font-size:13px;margin-top:4px}
 
 <div class="section" style="margin-top:0;border-top:1px solid var(--border)">
   <div class="section-title" id="contact-title">Contact Us</div>
-  <div class="section-sub">We are here to help you</div>
+  <div class="section-sub" id="contact-sub">We are here to help you</div>
   <div class="contact-card">
     <div class="contact-row">
       <div class="contact-icon">👤</div>
-      <div><div class="contact-label">Owner</div><div class="contact-value">Sanam Dorababu</div></div>
+      <div><div class="contact-label" id="lbl-owner">Owner</div><div class="contact-value">Sanam Dorababu</div></div>
     </div>
     <div class="contact-row">
       <div class="contact-icon">📞</div>
-      <div><div class="contact-label">Phone</div><div class="contact-value">9948466739 / 8328369611</div></div>
+      <div><div class="contact-label" id="lbl-phone">Phone</div><div class="contact-value">9948466739 / 8328369611</div></div>
     </div>
     <div class="contact-row">
       <div class="contact-icon">💬</div>
-      <div><div class="contact-label">WhatsApp</div><div class="contact-value"><a class="contact-link" href="https://wa.me/919948466739" target="_blank">Chat on WhatsApp →</a></div></div>
+      <div><div class="contact-label" id="lbl-whatsapp">WhatsApp</div><div class="contact-value"><a class="contact-link" href="https://wa.me/919948466739" target="_blank" id="lbl-wa-link">Chat on WhatsApp →</a></div></div>
     </div>
     <div class="contact-row">
       <div class="contact-icon">📍</div>
-      <div><div class="contact-label">Location</div><div class="contact-value"><a class="contact-link" href="https://maps.app.goo.gl/GWvE6DqjVvPHgg1G8" target="_blank">Open in Google Maps →</a></div></div>
+      <div><div class="contact-label" id="lbl-location">Location</div><div class="contact-value"><a class="contact-link" href="https://maps.app.goo.gl/GWvE6DqjVvPHgg1G8" target="_blank" id="lbl-map-link">Open in Google Maps →</a></div></div>
     </div>
   </div>
 </div>
 
 <footer>
   <div class="logo-footer">SDB <span>Lemons</span></div>
-  <p>Sanam Dorababu | Lemon Market</p>
+  <p>Sanam Dorababu | <span id="footer-market">Lemon Market</span></p>
   <p style="margin-top:8px">📞 9948466739 | 8328369611</p>
-  <p style="margin-top:12px;font-size:12px;color:#888">© 2025 SDB Lemons. All rights reserved.</p>
+  <p style="margin-top:12px;font-size:12px;color:#888" id="footer-copy">© 2025 SDB Lemons. All rights reserved.</p>
 </footer>
 
 <script>
@@ -198,32 +195,122 @@ const SUPABASE_URL='https://ivlqndcsdfdprynfaqyv.supabase.co';
 const SUPABASE_KEY='sb_publishable_5tRViQsF2R7sbxeQHPL62A_JwUVh7hc';
 const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
 
+const T={
+  en:{
+    notif:"Loading today's price...",
+    badge:'Trusted since 2004 — 20+ years of excellence',
+    heroTitle:'Welcome to <span style="color:var(--green)">SDB Lemons</span>',
+    heroSub:"Sanam Dorababu's Lemon Market — Fresh, Direct, Trusted",
+    lblToday:"Today's Lemon Price Range",
+    lblPerKg:'₹ per kilogram',
+    lblLow:'Low quality: lower price',
+    lblHigh:'Good quality: higher price',
+    btnFarmer:'👨‍🌾 Farmer Login',
+    btnHist:'View Price History',
+    aboutTitle:'About Our Shop',
+    aboutSub:'Serving lemon farmers with trust and transparency since 2004',
+    aboutStory:'SDB Lemons has been a trusted name in the Lemon Market for over 20 years. Founded by <strong>Sanam Dorababu</strong>, we have built strong relationships with hundreds of farmers across the region. We believe in fair pricing, transparent transactions, and timely payments to every farmer who trusts us with their harvest.',
+    lblYears:'Years in business',
+    lblFarmers:'Farmers served',
+    lblTons:'Tons traded/year',
+    lblTransparent:'Transparent pricing',
+    photosTitle:'Shop & Owner Photos',
+    photosSub:'Add your photos to make this section come alive',
+    p1:'Owner Photo',p2:'Shop Front',p3:'Lemon Farm',p4:'Weighing Area',p5:'Team Photo',p6:'Achievements',
+    priceHistTitle:'Lemon Price History',
+    priceHistSub:'Track how prices change over time',
+    tab7:'7 Days',tab30:'30 Days',
+    contactTitle:'Contact Us',
+    contactSub:'We are here to help you',
+    lblOwner:'Owner',lblPhone:'Phone',lblWhatsapp:'WhatsApp',lblLocation:'Location',
+    waLink:'Chat on WhatsApp →',mapLink:'Open in Google Maps →',
+    navFarmer:'Farmer Login',navAdmin:'Admin',
+    footerMarket:'Lemon Market',
+    footerCopy:'© 2025 SDB Lemons. All rights reserved.'
+  },
+  te:{
+    notif:'నేటి ధర లోడ్ అవుతోంది...',
+    badge:'2004 నుండి విశ్వసనీయత — 20+ సంవత్సరాల అనుభవం',
+    heroTitle:'<span style="color:var(--green)">SDB లెమన్స్</span>కు స్వాగతం',
+    heroSub:'సనం దొరబాబు నిమ్మకాయ మార్కెట్ — తాజా, నేరుగా, విశ్వసనీయం',
+    lblToday:'నేటి నిమ్మకాయ ధర పరిధి',
+    lblPerKg:'₹ కిలో కి',
+    lblLow:'తక్కువ నాణ్యత: తక్కువ ధర',
+    lblHigh:'మంచి నాణ్యత: ఎక్కువ ధర',
+    btnFarmer:'👨‍🌾 రైతు లాగిన్',
+    btnHist:'ధర చరిత్ర చూడండి',
+    aboutTitle:'మా దుకాణం గురించి',
+    aboutSub:'2004 నుండి రైతులకు నమ్మకంగా సేవ చేయడం',
+    aboutStory:'SDB లెమన్స్ 20 సంవత్సరాలకు పైగా నిమ్మకాయ మార్కెట్‌లో విశ్వసనీయమైన పేరు పొందింది. <strong>సనం దొరబాబు</strong> స్థాపించిన ఈ వ్యాపారం వందలాది రైతులతో బలమైన సంబంధాలను నిర్మించింది. మేము న్యాయమైన ధరలు, పారదర్శక లావాదేవీలు మరియు సకాలంలో చెల్లింపులు నిర్వహిస్తాము.',
+    lblYears:'వ్యాపార అనుభవం',
+    lblFarmers:'సేవించిన రైతులు',
+    lblTons:'టన్నులు/సంవత్సరం',
+    lblTransparent:'పారదర్శక ధరలు',
+    photosTitle:'దుకాణం & యజమాని ఫోటోలు',
+    photosSub:'మీ ఫోటోలు జోడించండి',
+    p1:'యజమాని ఫోటో',p2:'దుకాణం ముందు',p3:'నిమ్మకాయ తోట',p4:'తూకం ప్రాంతం',p5:'బృంద ఫోటో',p6:'విజయాలు',
+    priceHistTitle:'నిమ్మకాయ ధర చరిత్ర',
+    priceHistSub:'ధరలు ఎలా మారుతున్నాయో తెలుసుకోండి',
+    tab7:'7 రోజులు',tab30:'30 రోజులు',
+    contactTitle:'మమ్మల్ని సంప్రదించండి',
+    contactSub:'మేము సహాయం చేయడానికి ఇక్కడ ఉన్నాము',
+    lblOwner:'యజమాని',lblPhone:'ఫోన్',lblWhatsapp:'వాట్సాప్',lblLocation:'స్థానం',
+    waLink:'వాట్సాప్‌లో మాట్లాడండి →',mapLink:'గూగుల్ మ్యాప్‌లో తెరవండి →',
+    navFarmer:'రైతు లాగిన్',navAdmin:'అడ్మిన్',
+    footerMarket:'నిమ్మకాయ మార్కెట్',
+    footerCopy:'© 2025 SDB లెమన్స్. అన్ని హక్కులు రిజర్వ్ చేయబడ్డాయి.'
+  }
+};
+
 let lang='en';
 function setLang(l){
   lang=l;
+  localStorage.setItem('sdb_lang',l);
   document.getElementById('btnEn').classList.toggle('active',l==='en');
   document.getElementById('btnTe').classList.toggle('active',l==='te');
-  if(l==='te'){
-    document.getElementById('lbl-today').textContent='నేటి నిమ్మకాయ ధర పరిధి';
-    document.getElementById('lbl-per-kg').textContent='₹ కిలో కి';
-    document.getElementById('lbl-low').textContent='తక్కువ నాణ్యత: తక్కువ ధర';
-    document.getElementById('lbl-high').textContent='మంచి నాణ్యత: ఎక్కువ ధర';
-    document.getElementById('nav-farmer').textContent='రైతు లాగిన్';
-    document.getElementById('nav-admin').textContent='అడ్మిన్';
-    document.getElementById('btn-farmer-login').textContent='👨‍🌾 రైతు లాగిన్';
-    document.getElementById('about-title').textContent='మా దుకాణం గురించి';
-    document.getElementById('contact-title').textContent='మమ్మల్ని సంప్రదించండి';
-  } else {
-    document.getElementById('lbl-today').textContent="Today's Lemon Price Range";
-    document.getElementById('lbl-per-kg').textContent='₹ per kilogram';
-    document.getElementById('lbl-low').textContent='Low quality: lower price';
-    document.getElementById('lbl-high').textContent='Good quality: higher price';
-    document.getElementById('nav-farmer').textContent='Farmer Login';
-    document.getElementById('nav-admin').textContent='Admin';
-    document.getElementById('btn-farmer-login').textContent='👨‍🌾 Farmer Login';
-    document.getElementById('about-title').textContent='About Our Shop';
-    document.getElementById('contact-title').textContent='Contact Us';
-  }
+  const t=T[l];
+  document.getElementById('notif-text').textContent=t.notif;
+  document.getElementById('badge-text').textContent=t.badge;
+  document.getElementById('hero-title').innerHTML=t.heroTitle;
+  document.getElementById('hero-sub').textContent=t.heroSub;
+  document.getElementById('lbl-today').textContent=t.lblToday;
+  document.getElementById('lbl-per-kg').textContent=t.lblPerKg;
+  document.getElementById('lbl-low').textContent=t.lblLow;
+  document.getElementById('lbl-high').textContent=t.lblHigh;
+  document.getElementById('btn-farmer-login').textContent=t.btnFarmer;
+  document.getElementById('btn-price-hist').textContent=t.btnHist;
+  document.getElementById('about-title').textContent=t.aboutTitle;
+  document.getElementById('about-sub').textContent=t.aboutSub;
+  document.getElementById('about-story').innerHTML=t.aboutStory;
+  document.getElementById('lbl-years').textContent=t.lblYears;
+  document.getElementById('lbl-farmers').textContent=t.lblFarmers;
+  document.getElementById('lbl-tons').textContent=t.lblTons;
+  document.getElementById('lbl-transparent').textContent=t.lblTransparent;
+  document.getElementById('photos-title').textContent=t.photosTitle;
+  document.getElementById('photos-sub').textContent=t.photosSub;
+  document.getElementById('p1').textContent=t.p1;
+  document.getElementById('p2').textContent=t.p2;
+  document.getElementById('p3').textContent=t.p3;
+  document.getElementById('p4').textContent=t.p4;
+  document.getElementById('p5').textContent=t.p5;
+  document.getElementById('p6').textContent=t.p6;
+  document.getElementById('price-hist-title').textContent=t.priceHistTitle;
+  document.getElementById('price-hist-sub').textContent=t.priceHistSub;
+  document.getElementById('tab-7').textContent=t.tab7;
+  document.getElementById('tab-30').textContent=t.tab30;
+  document.getElementById('contact-title').textContent=t.contactTitle;
+  document.getElementById('contact-sub').textContent=t.contactSub;
+  document.getElementById('lbl-owner').textContent=t.lblOwner;
+  document.getElementById('lbl-phone').textContent=t.lblPhone;
+  document.getElementById('lbl-whatsapp').textContent=t.lblWhatsapp;
+  document.getElementById('lbl-location').textContent=t.lblLocation;
+  document.getElementById('lbl-wa-link').textContent=t.waLink;
+  document.getElementById('lbl-map-link').textContent=t.mapLink;
+  document.getElementById('nav-farmer').textContent=t.navFarmer;
+  document.getElementById('nav-admin').textContent=t.navAdmin;
+  document.getElementById('footer-market').textContent=t.footerMarket;
+  document.getElementById('footer-copy').textContent=t.footerCopy;
+  loadTodayPrice();
 }
 
 async function loadTodayPrice(){
@@ -234,43 +321,44 @@ async function loadTodayPrice(){
       const maxP=data.price_max||data.price_per_kg||'--';
       document.getElementById('price-min').textContent='₹'+minP;
       document.getElementById('price-max').textContent='₹'+maxP;
-      document.getElementById('price-date').textContent='Updated: '+new Date(data.date).toLocaleDateString('en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
-      document.getElementById('notif-text').textContent='Today\'s lemon price: ₹'+minP+' - ₹'+maxP+'/kg — '+new Date(data.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
-    } else {
-      document.getElementById('price-min').textContent='Not';
-      document.getElementById('price-max').textContent='Set';
-      document.getElementById('notif-text').textContent='Price not updated yet. Contact admin.';
+      const dateStr=new Date(data.date).toLocaleDateString(lang==='te'?'te-IN':'en-IN',{weekday:'short',day:'numeric',month:'short',year:'numeric'});
+      document.getElementById('price-date').textContent=(lang==='te'?'నవీకరించబడింది: ':'Updated: ')+dateStr;
+      document.getElementById('notif-text').textContent=(lang==='te'?'నేటి నిమ్మకాయ ధర: ':'Today\'s lemon price: ')+'₹'+minP+' - ₹'+maxP+'/kg — '+new Date(data.date).toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'});
+    }else{
+      document.getElementById('price-min').textContent='--';
+      document.getElementById('price-max').textContent='--';
+      document.getElementById('notif-text').textContent=lang==='te'?'ధర ఇంకా నవీకరించబడలేదు. అడ్మిన్‌ని సంప్రదించండి.':"Price not updated yet. Contact admin.";
     }
-  }catch(e){
-    document.getElementById('price-min').textContent='--';
-    document.getElementById('price-max').textContent='--';
-  }
+  }catch(e){document.getElementById('price-min').textContent='--';document.getElementById('price-max').textContent='--';}
 }
 
 let chart;
 async function loadChart(days,btn){
   document.querySelectorAll('.chart-tab').forEach(b=>b.classList.remove('active'));
-  if(btn) btn.classList.add('active');
+  if(btn)btn.classList.add('active');
   try{
     const from=new Date();from.setDate(from.getDate()-days);
     const {data}=await sb.from('lemon_prices').select('date,price_min,price_max,price_per_kg').gte('date',from.toISOString().split('T')[0]).order('date');
     const labels=data?data.map(d=>new Date(d.date).toLocaleDateString('en-IN',{day:'numeric',month:'short'})):[];
     const mins=data?data.map(d=>d.price_min||d.price_per_kg):[];
     const maxs=data?data.map(d=>d.price_max||d.price_per_kg):[];
-    if(chart) chart.destroy();
+    if(chart)chart.destroy();
     chart=new Chart(document.getElementById('priceChart'),{
       type:'line',
       data:{labels,datasets:[
-        {label:'Min ₹/kg',data:mins,borderColor:'#d97706',backgroundColor:'rgba(217,119,6,0.05)',borderWidth:2,pointBackgroundColor:'#d97706',pointRadius:4,fill:false,tension:0.4},
-        {label:'Max ₹/kg',data:maxs,borderColor:'#2d7a3a',backgroundColor:'rgba(45,122,58,0.08)',borderWidth:2,pointBackgroundColor:'#2d7a3a',pointRadius:4,fill:'-1',tension:0.4}
+        {label:lang==='te'?'కనిష్ట ధర':'Min ₹/kg',data:mins,borderColor:'#d97706',backgroundColor:'rgba(217,119,6,0.05)',borderWidth:2,pointBackgroundColor:'#d97706',pointRadius:4,fill:false,tension:0.4},
+        {label:lang==='te'?'గరిష్ట ధర':'Max ₹/kg',data:maxs,borderColor:'#2d7a3a',backgroundColor:'rgba(45,122,58,0.08)',borderWidth:2,pointBackgroundColor:'#2d7a3a',pointRadius:4,fill:'-1',tension:0.4}
       ]},
       options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'top'}},scales:{y:{ticks:{callback:v=>'₹'+v,font:{size:11}},grid:{color:'rgba(0,0,0,0.04)'}},x:{ticks:{font:{size:10},maxTicksLimit:10},grid:{display:false}}}}
     });
-  }catch(e){console.log('Chart error',e);}
+  }catch(e){}
 }
 
-loadTodayPrice();
-loadChart(7,document.getElementById('tab-7'));
+window.addEventListener('load',()=>{
+  const saved=localStorage.getItem('sdb_lang')||'en';
+  if(saved==='te'){setLang('te');}else{loadTodayPrice();}
+  loadChart(7,document.getElementById('tab-7'));
+});
 </script>
 </body>
 </html>
